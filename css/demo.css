@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.dot {
+	position: absolute;
+}
+
+.dot li {
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	background: white;
+	border-radius: 50%;
+}
+
+.picture {
+	position: absolute;
+}
+
+.picture li {
+	background: #76FFE9;
+	text-align: center;
+}
+
+.picture li img{
+	width:100%;
+	height:100%;
+}
+
+#container {
+	position: relative;
+	overflow: hidden;
+}
+
+.btn {
+	width: 20px;
+	height: 40px;
+	cursor: pointer;
+	background: #9686FF;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+}
