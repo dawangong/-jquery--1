@@ -1,2 +1,2 @@
 ### Component-development
-组件开发
+javascript组件开发专用
