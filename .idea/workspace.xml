@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812051ce-1ad2-425e-b4d3-6690205b64f3" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tab选项卡/README.md" afterPath="$PROJECT_DIR$/tab选项卡/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,12 +20,13 @@
         <entry file="file://$PROJECT_DIR$/tab选项卡/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="360">
-                <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+              <first_editor relative-caret-position="599">
+                <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
                 <folding>
-                  <marker date="1520080972659" expanded="true" signature="207:234" ph="{...}" />
-                  <marker date="1520080972659" expanded="true" signature="282:595" ph="..." />
-                  <marker date="1520080972659" expanded="true" signature="314:465" ph="..." />
+                  <marker date="1520082692471" expanded="true" signature="207:234" ph="{...}" />
+                  <marker date="1520082692471" expanded="true" signature="262:645" ph="..." />
+                  <marker date="1520082692471" expanded="true" signature="288:601" ph="..." />
+                  <marker date="1520082692471" expanded="true" signature="320:471" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -123,6 +123,12 @@
               <item name="Component-development" type="462c0819:PsiDirectoryNode" />
               <item name="tab选项卡" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Component-development" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Component-development" type="462c0819:PsiDirectoryNode" />
+              <item name="tab选项卡" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -171,12 +177,12 @@
       <workItem from="1519991652305" duration="2875000" />
       <workItem from="1520006959503" duration="666000" />
       <workItem from="1520079252313" duration="112000" />
-      <workItem from="1520079386090" duration="1573000" />
+      <workItem from="1520079386090" duration="2332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5226000" />
+    <option name="totallyTimeSpent" value="5985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -281,20 +287,22 @@
         <state relative-caret-position="36">
           <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
           <folding>
-            <marker date="1520080972659" expanded="true" signature="207:234" ph="{...}" />
-            <marker date="1520080972659" expanded="true" signature="282:595" ph="..." />
-            <marker date="1520080972659" expanded="true" signature="314:465" ph="..." />
+            <marker date="1520082692471" expanded="true" signature="207:234" ph="{...}" />
+            <marker date="1520082692471" expanded="true" signature="262:645" ph="..." />
+            <marker date="1520082692471" expanded="true" signature="288:601" ph="..." />
+            <marker date="1520082692471" expanded="true" signature="320:471" ph="..." />
           </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <first_editor relative-caret-position="599">
+            <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
             <folding>
-              <marker date="1520080972659" expanded="true" signature="207:234" ph="{...}" />
-              <marker date="1520080972659" expanded="true" signature="282:595" ph="..." />
-              <marker date="1520080972659" expanded="true" signature="314:465" ph="..." />
+              <marker date="1520082692471" expanded="true" signature="207:234" ph="{...}" />
+              <marker date="1520082692471" expanded="true" signature="262:645" ph="..." />
+              <marker date="1520082692471" expanded="true" signature="288:601" ph="..." />
+              <marker date="1520082692471" expanded="true" signature="320:471" ph="..." />
             </folding>
           </first_editor>
           <second_editor />

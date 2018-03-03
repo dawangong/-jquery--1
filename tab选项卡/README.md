@@ -16,8 +16,8 @@ new Tab({param1:'xxx1', param2:'xxx2'}, function() {
 });
 ```
 >html中:
-
 ```html
+<body>
 <div class="tab-contain">
     <ul class="tab-contain.ul">
         <li class="tab-contain.item">tab1</li>
@@ -28,6 +28,8 @@ new Tab({param1:'xxx1', param2:'xxx2'}, function() {
     <div class="tab-contain.box">2</div>
     <div class="tab-contain.box">3</div>
 </div>
+<script src="js/tab组件.js"></script>
+</body>
 ```
 2. tab对象参数解释：
     - configuration（参数一）
