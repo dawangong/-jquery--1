@@ -3,14 +3,20 @@ let Tab = (function (window) {
         this.configuration = configuration;
         this.callback = callback;
         this._configuration = {
-            tabPadding: '5px 20px',
-            tabBgColor: ['#00ffd3fa', '#00ffd3fa', '#00ffd3fa'],
             left: 0,
             top: 0,
-            boxWidth: 400,
-            boxHeight: 400,
+            tabPadding: '2px 10px',
+            tabBgColor: ['#00ffd3fa', '#00ffd3fa', '#00ffd3fa'],
+            tabBgColored: ['#2196F3', '#2196F3', '#2196F3'],
+            tabBorderColor: ['black', 'black', 'black'],
+            tabDistance: 5,
+            fontSize: '14px',
+            fontColor: ['white', 'white', 'white'],
+            contentWidth: 300,
+            contentHeight: 300,
+            contentBorderColor: 'black',
             event: 'click',
-            contain: 'tab-contain'
+            contain: 'tab-contain',
         };
         this.init();
     }
@@ -38,21 +44,22 @@ let Tab = (function (window) {
                 boxSizing: 'border-box',
                 cursor: 'pointer',
                 padding: this._configuration.tabPadding,
-                color: 'white',
-                marginLeft: '5px',
-                border: '1px solid black',
-                borderBottom: 0
+                color: this._configuration.fontColor[i],
+                marginLeft: this._configuration.tabDistance + 'px',
+                border: `1px solid ${this._configuration.tabBorderColor[i]}`,
+                borderBottom: 0,
+                fontSize: this._configuration.fontSize
             });
             this.css(this.box[i], {
                 position: 'absolute',
-                border: '1px solid black',
-                width: this._configuration.boxWidth + 'px',
-                height: this._configuration.boxHeight + 'px',
+                border: `1px solid ${this._configuration.contentBorderColor}`,
+                width: this._configuration.contentHeight + 'px',
+                height: this._configuration.contentHeight + 'px',
                 display: 'none',
             });
         });
         this.css(this.box[0], {display: 'block'});
-        this.css(this.item[0], {borderLeft: 0, background: '#2196F3', marginLeft: 0})
+        this.css(this.item[0], {background: '#2196F3', marginLeft: 0})
     };
 
     Tab.prototype.addEvent = function () {
@@ -63,7 +70,7 @@ let Tab = (function (window) {
                     that.css(v, {background: that._configuration.tabBgColor[i]});
                     that.css(that.box[i], {display: 'none'});
                 });
-                that.css(this, {background: '#2196F3'});
+                that.css(this, {background: that._configuration.tabBgColored[i]});
                 that.css(that.box[i], {display: 'block'});
                 that.callback && that.callback();
             }, false)
