@@ -1,11 +1,20 @@
 ### tab选项卡
 1. 使用方法：
 >js中:
-
+- 不传参数  
+```javascript
+new Tab();
+```
+- 传入配置参数
 ```javascript
 new Tab({param1:'xxx1', param2:'xxx2'});
 ```
-
+- 传入回调函数的
+```javascript
+new Tab({param1:'xxx1', param2:'xxx2'}, function() {
+        // do something
+});
+```
 >html中:
 
 ```html
@@ -21,12 +30,12 @@ new Tab({param1:'xxx1', param2:'xxx2'});
 </div>
 ```
 2. tab对象参数解释：
-    - configuration
+    - configuration（参数一）
         - 含义：配置tab需要的配置参数
         - 可选参数
         - 类型：对象
         - 默认：见配置参数解释
-    - callback
+    - callback（参数二）
         - 含义：tab选项卡切换后触发的回调函数
         - 可选参数
         - 类型：function
