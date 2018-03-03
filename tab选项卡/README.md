@@ -20,7 +20,18 @@ new Tab({param1:'xxx1', param2:'xxx2'});
     <div class="tab-contain.box">3</div>
 </div>
 ```
-2. 参数解析：
+2. tab对象参数解释：
+    - configuration
+        - 含义：配置tab需要的配置参数
+        - 可选参数
+        - 类型：对象
+        - 默认：见配置参数解释
+    - callback
+        - 含义：tab选项卡切换后触发的回调函数
+        - 可选参数
+        - 类型：function
+        - 默认：无
+3. 配置参数(configuration)解释：
   - tabPadding
     - 含义：tab按钮的padding属性设置
     - 默认：'5px 20px'
@@ -53,6 +64,8 @@ new Tab({param1:'xxx1', param2:'xxx2'});
     - 含义：最外层容器的类名参数
     - 默认：'tab-contain'
     - 类型：字符串
-3. 其他：
+4. 其他：
   - 如果一个页面使用多个tab，外层容器请定义不同的类名，其他照旧模板。（外层容器类名默认是模板中的：tab-contain）
   - 传递参数时前后顺序任意即可，内部已经做过了相关处理
+5. 更新：
+  - 增加了回调函数，在切换tab时触发
