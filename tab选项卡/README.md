@@ -49,7 +49,7 @@ new Tab({param1:'xxx1', param2:'xxx2'});
     - 含义：触发切换的事件类型
     - 默认：'click'
     - 类型：字符串
-  - contain: 含义： 类型：字符串
+  - contain
     - 含义：最外层容器的类名参数
     - 默认：'tab-contain'
     - 类型：字符串
