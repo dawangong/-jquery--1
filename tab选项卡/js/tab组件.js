@@ -1,5 +1,5 @@
 let Tab = (function (window) {
-    function Tab(configuration, callback) {
+    function Tab(configuration = {}, callback) {
         this.configuration = configuration;
         this.callback = callback;
         this._configuration = {
