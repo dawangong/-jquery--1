@@ -81,7 +81,7 @@ let Tab = (function (window) {
         this.contain = document.getElementsByClassName(this._configuration.contain)[0];
         this.oul = this.contain.getElementsByClassName('tab-contain.ul')[0];
         this.item = [...this.oul.getElementsByClassName('tab-contain.item')];
-        this.box = [...this.contain.getElementsByClassName('tab-contain.box')];
+        this.box = [...this.contain.getElementsByClassName('tab-contain.content')];
     };
 
     Tab.prototype.css = function (obj, option) {
