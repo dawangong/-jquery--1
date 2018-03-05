@@ -1,33 +1,37 @@
 let Tab = (function (window) {
     function Tab(configuration = {}, callback) {
-        this.configuration = configuration;
-        this.callback = callback;
-        this._configuration = {
-            left: 0,
-            top: 0,
-            tabPadding: '2px 10px',
-            tabBgColor: ['#00ffd3fa', '#00ffd3fa', '#00ffd3fa'],
-            tabBgColored: ['#2196F3', '#2196F3', '#2196F3'],
-            tabBorderColor: ['black', 'black', 'black'],
-            tabDistance: 5,
-            fontSize: '14px',
-            fontColor: ['white', 'white', 'white'],
-            contentWidth: 300,
-            contentHeight: 300,
-            contentBorderColor: 'black',
-            event: 'click',
-            contain: 'tab-contain',
-        };
+		this.configuration = configuration;
+		this.callback = callback;
         this.init();
     }
 
     Tab.prototype.init = function () {
-        for (let i in this.configuration) {
-            this._configuration[i] = this.configuration[i];
-        }
+        this.updateDeploy();
         this.enactLayout();
         this.addEvent();
     };
+
+	Tab.prototype.updateDeploy = function () {
+		this._configuration = {
+			left: 0,
+			top: 0,
+			tabPadding: '2px 10px',
+			tabBgColor: ['#00ffd3fa', '#00ffd3fa', '#00ffd3fa'],
+			tabBgColored: ['#2196F3', '#2196F3', '#2196F3'],
+			tabBorderColor: ['black', 'black', 'black'],
+			tabDistance: 5,
+			fontSize: '14px',
+			fontColor: ['white', 'white', 'white'],
+			contentWidth: 300,
+			contentHeight: 300,
+			contentBorderColor: 'black',
+			event: 'click',
+			contain: 'tab-contain',
+		};
+		for (let i in this.configuration) {
+			this._configuration[i] = this.configuration[i];
+		}
+	};
 
     Tab.prototype.enactLayout = function () {
         this.prepareElement();
