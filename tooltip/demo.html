@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
     <script src="js/tooltip组件.js"></script>
 </head>
 <body>
-    <div class="tooltip">
+<div style="position: relative;left: 50px;top: 50px;background:blue;display: inline-block">
+    测试
+    <p class="tooltip">
+        tooltip
         <span></span>
-    </div>
-    <script>
-        new Tooltip ();
-    </script>
+    </p>
+</div>
+<script>
+	new Tooltip({tooltips: ['tooltip'], position: 'top', padding: '3px 10px', color: 'white', bgColor: 'red'});
+</script>
 </body>
 </html>
