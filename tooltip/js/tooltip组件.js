@@ -30,8 +30,8 @@ let Tooltip = (function (window) {
 				this._tooltipConfig[i] = this.tooltipConfig[i];
 			}
 		}
-		this.classList.forEach(v => {
-			let temp = document.getElementsByClassName(v)[0];
+		this.classList.forEach((v,i) => {
+			let temp = document.getElementsByClassName(v)[i];
 			this.translate(temp,temp.parentNode);
 			this.css(temp, {
 				position: 'absolute',
@@ -71,7 +71,7 @@ let Tooltip = (function (window) {
 	};
 
 	Tooltip.prototype.translate = function (temp,parentNode) {
-		console.log(parentNode.offsetWidth);
+		console.log(temp.offsetWidth);
 		switch (this._tooltipConfig.position) {
 			case 'top':
 				this.left = 0;
