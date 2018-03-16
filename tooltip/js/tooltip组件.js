@@ -5,6 +5,7 @@ let Tooltip = (function (window) {
 	}
 
 	Tooltip.prototype.init = function () {
+		this.classList = [];
 		this._tooltipConfig = {
 			position: 'top',
 			padding: '3px 10px',
@@ -24,24 +25,28 @@ let Tooltip = (function (window) {
 	Tooltip.prototype.setStyle = function () {
 		for (let i in this.tooltipConfig) {
 			if (i === 'tooltips') {
-				this.classList = this.tooltipConfig[i];
+				this.classList = this.classList.concat(this.tooltipConfig[i]);
 			}
 			else {
 				this._tooltipConfig[i] = this.tooltipConfig[i];
 			}
 		}
-		this.classList.forEach((v,i) => {
-			let temp = document.getElementsByClassName(v)[i];
-			this.translate(temp,temp.parentNode);
-			this.css(temp, {
-				position: 'absolute',
-				padding: this._tooltipConfig.padding,
-				color: this._tooltipConfig.color,
-				background: this._tooltipConfig.bgColor,
-				left: this.left + 'px',
-				top: this.top + 'px',
-				fontSize: this._tooltipConfig.fontSize,
-				borderRadius: this._tooltipConfig.borderRadius
+		this.classList.forEach(v => {
+			let lists = [...document.getElementsByClassName(v)];
+			lists.forEach(_v => {
+				this.translate(_v,_v.parentNode);
+				this.css(_v, {
+					position: 'absolute',
+					padding: this._tooltipConfig.padding,
+					color: this._tooltipConfig.color,
+					background: this._tooltipConfig.bgColor,
+					left: this.left + 'px',
+					top: this.top + 'px',
+					fontSize: this._tooltipConfig.fontSize,
+					borderRadius: this._tooltipConfig.borderRadius
+					// width: '40px',
+					// height: '20px'
+				});
 			});
 		});
 	};
@@ -51,7 +56,7 @@ let Tooltip = (function (window) {
 	};
 
 	// Tooltip.prototype.getStyle = function (element, attr) {
-	// 	//IE写法
+	// 		//IE写法
 	// 	if (element.currentStyle) {
 	// 		return element.currentStyle[attr];
 	// 		// 标准
@@ -60,9 +65,9 @@ let Tooltip = (function (window) {
 	// 	}
 	// };
 
-	Tooltip.prototype.getValue =function (element1,element2,attr) {
-		return Math.floor(Math.abs(element1[attr] - element2[attr])/2);
-	};
+	// Tooltip.prototype.getValue =function (element1,element2,attr) {
+	// 	return Math.floor(Math.abs(element1[attr] - element2[attr])/2);
+	// };
 
 	Tooltip.prototype.css = function (obj, option) {
 		for (let i in option) {
@@ -71,22 +76,21 @@ let Tooltip = (function (window) {
 	};
 
 	Tooltip.prototype.translate = function (temp,parentNode) {
-		console.log(temp.offsetWidth);
 		switch (this._tooltipConfig.position) {
 			case 'top':
 				this.left = 0;
-				this.top = 0;
+				this.top = -temp.offsetHeight - 10;
 				break;
 			case 'bottom':
-				this.left = -13;
-				this.top = 20;
+				this.left = 0;
+				this.top = temp.offsetHeight + 10;
 				break;
 			case 'left':
-				this.left = -20;
+				this.left = -parentNode.offsetWidth + 5;
 				this.top = 0;
 				break;
 			case 'right':
-				this.left = 20;
+				this.left = temp.offsetWidth;
 				this.top = 0;
 				break;
 		}
