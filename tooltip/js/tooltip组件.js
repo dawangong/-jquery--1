@@ -1,10 +1,10 @@
-let Tooltip = (function (window) {
-	function Tooltip(tooltipConfig) {
+class Tooltip {
+	constructor(tooltipConfig) {
 		this.tooltipConfig = tooltipConfig;
 		this.init();
 	}
 
-	Tooltip.prototype.init = function () {
+	init() {
 		this.classList = [];
 		this._tooltipConfig = {
 			position: 'top',
@@ -16,13 +16,13 @@ let Tooltip = (function (window) {
 		};
 		this.setLayout();
 		this.addEvent();
-	};
+	}
 
-	Tooltip.prototype.setLayout = function () {
+	setLayout() {
 		this.setStyle();
-	};
+	}
 
-	Tooltip.prototype.setStyle = function () {
+	setStyle() {
 		for (let i in this.tooltipConfig) {
 			if (i === 'tooltips') {
 				this.classList = this.classList.concat(this.tooltipConfig[i]);
@@ -34,7 +34,7 @@ let Tooltip = (function (window) {
 		this.classList.forEach(v => {
 			let lists = [...document.getElementsByClassName(v)];
 			lists.forEach(_v => {
-				this.translate(_v,_v.parentNode);
+				this.translate(_v, _v.parentNode);
 				this.css(_v, {
 					position: 'absolute',
 					padding: this._tooltipConfig.padding,
@@ -49,52 +49,36 @@ let Tooltip = (function (window) {
 				});
 			});
 		});
-	};
+	}
 
-	Tooltip.prototype.addEvent = function () {
+	addEvent() {
 
-	};
+	}
 
-	// Tooltip.prototype.getStyle = function (element, attr) {
-	// 		//IE写法
-	// 	if (element.currentStyle) {
-	// 		return element.currentStyle[attr];
-	// 		// 标准
-	// 	} else {
-	// 		return getComputedStyle(element, null) [attr];
-	// 	}
-	// };
-
-	// Tooltip.prototype.getValue =function (element1,element2,attr) {
-	// 	return Math.floor(Math.abs(element1[attr] - element2[attr])/2);
-	// };
-
-	Tooltip.prototype.css = function (obj, option) {
+	css(obj, option) {
 		for (let i in option) {
 			obj.style[i] = option[i];
 		}
-	};
+	}
 
-	Tooltip.prototype.translate = function (temp,parentNode) {
+	translate(node, parentNode) {
 		switch (this._tooltipConfig.position) {
 			case 'top':
 				this.left = 0;
-				this.top = -temp.offsetHeight - 10;
+				this.top = -node.offsetHeight - 10;
 				break;
 			case 'bottom':
 				this.left = 0;
-				this.top = temp.offsetHeight + 10;
+				this.top = node.offsetHeight + 10;
 				break;
 			case 'left':
 				this.left = -parentNode.offsetWidth + 5;
 				this.top = 0;
 				break;
 			case 'right':
-				this.left = temp.offsetWidth;
+				this.left = node.offsetWidth;
 				this.top = 0;
 				break;
 		}
-	};
-
-	return Tooltip;
-})(window);
+	}
+}

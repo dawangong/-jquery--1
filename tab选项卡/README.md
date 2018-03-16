@@ -108,5 +108,6 @@ new Tab({param1:'xxx1', param2:'xxx2'}, function() {
     - 修复了第一个tab选项左侧边框没有的bug
     - 切换区域的宽高参数更改为contentWidth和contentHeight（原来为boxWidth和boxHeight）
     - 增加了tab及切换区域的边框颜色自定义参数
-  
+  - 2018.3.16
+    - 整体转为es6写法
   
