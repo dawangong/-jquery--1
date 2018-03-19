@@ -26,7 +26,13 @@
     </div>
     <script src="js/modal.js"></script>
     <script>
-        new Modal({});
+        new Modal({}).decideFn(() => {
+            //do something
+            console.log(1);
+        }).cancelFn(() => {
+            //do something
+            console.log(2);
+        });
     </script>
 </body>
 </html>
