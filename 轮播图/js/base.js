@@ -1,6 +1,6 @@
 define(function() {
 	function Lbt() {
-		var x = $('.picture li').length; //获取轮播图页数	
+		var x = $('.picture li').length; //获取轮播图页数
 		this.json0 = { //设置一个有默认值的对象存储一些参数
 			n: x,
 			width: 580,
@@ -134,7 +134,7 @@ define(function() {
 				$('.btn').stop().animate({
 					opacity: 0
 				});
-			})
+			});
 
 			$('.btn').eq(0).click(function() { //上一页按钮设置
 				n--;
@@ -156,7 +156,7 @@ define(function() {
 				}).siblings('li').css({
 					background: 'white'
 				});
-			})
+			});
 
 			$('.btn').eq(1).click(function() { //下一页按钮设置
 				n++;
@@ -165,12 +165,12 @@ define(function() {
 						left:-mn.width
 					});
 					n =2;
-					
-				} 
+
+				}
 				$('.picture').stop().animate({
 						left: -n * mn.width
 					});
-				
+
 				$('.dot li').eq(n - 1).css({
 					background: mn.dotcolor
 				}).siblings('li').css({
@@ -200,14 +200,14 @@ define(function() {
 					left: -n * mn.width
 				});
 			}
-		})
+		});
 
 		$('.dot li').mouseleave(function() {
 			clearTimeout(tim);
 		})
-	}
+	};
 
 	return {
 		Lbt: Lbt
 	}
-})
+});
