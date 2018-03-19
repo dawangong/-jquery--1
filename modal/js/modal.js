@@ -1,5 +1,5 @@
 class Modal {
-    constructor(config) {
+    constructor(config = {}) {
         this._config = config;
         this.config = {
             contain: 'modal-contain',
