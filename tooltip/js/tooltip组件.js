@@ -1,12 +1,12 @@
 class Tooltip {
 	constructor(tooltipConfig) {
-		this.tooltipConfig = tooltipConfig;
+		this._tooltipConfig = tooltipConfig;
 		this.init();
 	}
 
 	init() {
 		this.classList = [];
-		this._tooltipConfig = {
+		this.tooltipConfig = {
 			position: 'top',
 			padding: '3px 10px',
 			color: 'white',
@@ -23,12 +23,12 @@ class Tooltip {
 	}
 
 	setStyle() {
-		for (let i in this.tooltipConfig) {
+		for (let i in this._tooltipConfig) {
 			if (i === 'tooltips') {
-				this.classList = this.classList.concat(this.tooltipConfig[i]);
+				this.classList = this.classList.concat(this._tooltipConfig[i]);
 			}
 			else {
-				this._tooltipConfig[i] = this.tooltipConfig[i];
+				this.tooltipConfig[i] = this._tooltipConfig[i];
 			}
 		}
 		this.classList.forEach(v => {
@@ -37,13 +37,13 @@ class Tooltip {
 				this.translate(_v, _v.parentNode);
 				this.css(_v, {
 					position: 'absolute',
-					padding: this._tooltipConfig.padding,
-					color: this._tooltipConfig.color,
-					background: this._tooltipConfig.bgColor,
+					padding: this.tooltipConfig.padding,
+					color: this.tooltipConfig.color,
+					background: this.tooltipConfig.bgColor,
 					left: this.left + 'px',
 					top: this.top + 'px',
-					fontSize: this._tooltipConfig.fontSize,
-					borderRadius: this._tooltipConfig.borderRadius
+					fontSize: this.tooltipConfig.fontSize,
+					borderRadius: this.tooltipConfig.borderRadius
 					// width: '40px',
 					// height: '20px'
 				});
@@ -62,7 +62,7 @@ class Tooltip {
 	}
 
 	translate(node, parentNode) {
-		switch (this._tooltipConfig.position) {
+		switch (this.tooltipConfig.position) {
 			case 'top':
 				this.left = 0;
 				this.top = -node.offsetHeight - 10;

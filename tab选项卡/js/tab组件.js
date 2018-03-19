@@ -1,6 +1,6 @@
 class Tab {
 	constructor(configuration = {}, callback) {
-		this.configuration = configuration;
+		this._configuration = configuration;
 		this.callback = callback;
 		this.init();
 	}
@@ -12,7 +12,7 @@ class Tab {
 	}
 
 	updateDeploy() {
-		this._configuration = {
+		this.configuration = {
 			left: 0,
 			top: 0,
 			tabPadding: '2px 10px',
@@ -28,8 +28,8 @@ class Tab {
 			event: 'click',
 			contain: 'tab-contain',
 		};
-		for (let i in this.configuration) {
-			this._configuration[i] = this.configuration[i];
+		for (let i in this._configuration) {
+			this.configuration[i] = this._configuration[i];
 		}
 	}
 
@@ -37,28 +37,28 @@ class Tab {
 		this.prepareElement();
 		this.css(this.contain, {
 			position: 'absolute',
-			left: this._configuration.left + 'px',
-			top: this._configuration.top + 'px'
+			left: this.configuration.left + 'px',
+			top: this.configuration.top + 'px'
 		});
 		this.css(this.oul, {display: 'flex'});
 		this.item.forEach((v, i) => {
 			this.css(v, {
 				listStyle: 'none',
-				background: this._configuration.tabBgColor[i],
+				background: this.configuration.tabBgColor[i],
 				boxSizing: 'border-box',
 				cursor: 'pointer',
-				padding: this._configuration.tabPadding,
-				color: this._configuration.fontColor[i],
-				marginLeft: this._configuration.tabDistance + 'px',
-				border: `1px solid ${this._configuration.tabBorderColor[i]}`,
+				padding: this.configuration.tabPadding,
+				color: this.configuration.fontColor[i],
+				marginLeft: this.configuration.tabDistance + 'px',
+				border: `1px solid ${this.configuration.tabBorderColor[i]}`,
 				borderBottom: 0,
-				fontSize: this._configuration.fontSize
+				fontSize: this.configuration.fontSize
 			});
 			this.css(this.box[i], {
 				position: 'absolute',
-				border: `1px solid ${this._configuration.contentBorderColor}`,
-				width: this._configuration.contentHeight + 'px',
-				height: this._configuration.contentHeight + 'px',
+				border: `1px solid ${this.configuration.contentBorderColor}`,
+				width: this.configuration.contentHeight + 'px',
+				height: this.configuration.contentHeight + 'px',
 				display: 'none',
 			});
 		});
@@ -69,12 +69,12 @@ class Tab {
 	addEvent() {
 		let that = this;
 		this.item.forEach((v, i) => {
-			v.addEventListener(this._configuration.event, function () {
+			v.addEventListener(this.configuration.event, function () {
 				that.item.forEach((v, i) => {
-					that.css(v, {background: that._configuration.tabBgColor[i]});
+					that.css(v, {background: that.configuration.tabBgColor[i]});
 					that.css(that.box[i], {display: 'none'});
 				});
-				that.css(this, {background: that._configuration.tabBgColored[i]});
+				that.css(this, {background: that.configuration.tabBgColored[i]});
 				that.css(that.box[i], {display: 'block'});
 				that.callback && that.callback();
 			}, false)
@@ -82,7 +82,7 @@ class Tab {
 	}
 
 	prepareElement() {
-		this.contain = document.getElementsByClassName(this._configuration.contain)[0];
+		this.contain = document.getElementsByClassName(this.configuration.contain)[0];
 		this.oul = this.contain.getElementsByClassName('tab-contain.ul')[0];
 		this.item = [...this.oul.getElementsByClassName('tab-contain.item')];
 		this.box = [...this.contain.getElementsByClassName('tab-contain.content')];
