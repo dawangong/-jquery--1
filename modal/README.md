@@ -129,5 +129,6 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
 - 修复遮盖层bug
 - 美化遮盖层效果
 - 兼容确定取消按钮的省略布局
+- 省略布局下不存在对应控件的遍历报错修复
 
     

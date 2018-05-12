@@ -119,10 +119,12 @@ class Modal {
 
     bindEvent() {
         this.ele.forEach(v => {
-            this[v].addEventListener('click', () => {
-                this.css(this.contain, {display: 'none'});
-                this.css(this.cover, {display: 'none'});
-            }, false);
+            if(this[v]) {
+                this[v].addEventListener('click', () => {
+                    this.css(this.contain, {display: 'none'});
+                    this.css(this.cover, {display: 'none'});
+                }, false);
+            }
         });
     }
 
