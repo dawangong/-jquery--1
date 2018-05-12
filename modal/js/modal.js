@@ -3,6 +3,7 @@ class Modal {
         this._config = config;
         this.config = {
             contain: 'modal-contain',
+            cover: 'modal-cover',
             width: 400,
             height: 200
         };
@@ -24,7 +25,7 @@ class Modal {
 
     getElement() {
         this.contain = this.$(document, '.' + this.config.contain);
-        this.body = this.$(document, 'body');
+        this.cover = this.$(document, '.' + this.config.cover);
         this.getOther();
     }
 
@@ -47,9 +48,17 @@ class Modal {
             top: '50%',
             marginTop: -this.config.height / 2 + 'px',
             zIndex: 100,
-            background: 'white'
+            background: 'white',
+            display: 'block'
         });
-        this.css(this.body, {background: '#7f7f7f'});
+        this.css(this.cover, {
+            background: 'rgb(127, 127, 127, 0.5)',
+            width: `${document.body.clientWidth}px`,
+            height: `${document.body.scrollHeight}px`,
+            position: 'fixed',
+            display: 'block',
+            zIndex: 10
+        });
         this.css(this.header, {width: '100%', height: '35px', background: '#5998df'});
         this.css(this.title, {
             float: 'left',
@@ -112,7 +121,7 @@ class Modal {
         this.ele.forEach(v => {
             this[v].addEventListener('click', () => {
                 this.css(this.contain, {display: 'none'});
-                this.css(this.body, {background: 'white'});
+                this.css(this.cover, {display: 'none'});
             }, false);
         });
     }

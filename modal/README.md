@@ -1,4 +1,4 @@
-### modl
+### modal
 1. 使用方法：
 >js中:
 - 不传参数  
@@ -125,5 +125,8 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
 <script src="js/modal.js"></script>
 </body>
 ```
+5. 更新
+- 修复遮盖层bug
+- 美化遮盖层效果
 
     
