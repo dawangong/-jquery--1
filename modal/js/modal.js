@@ -90,10 +90,10 @@ class Modal {
         let baseValue = 10;
         if (this.decide) {
             this.css(this.decide, {
-                position: 'absolute',
+                float: 'right',
                 background: '#5998df',
-                right: baseValue + 55 + 'px',
-                bottom: '6px',
+                marginRight: baseValue + 'px',
+                marginTop: '6px',
                 padding: '3px 8px',
                 fontSize: '16px',
                 color: 'white',
@@ -104,10 +104,10 @@ class Modal {
 
         if (this.cancel) {
             this.css(this.cancel, {
-                position: 'absolute',
+                float: 'right',
                 background: 'white',
-                right: baseValue + 'px',
-                bottom: '6px',
+                marginRight: baseValue + 'px',
+                marginTop: '6px',
                 padding: '3px 8px',
                 color: '#333',
                 fontSize: '16px',
