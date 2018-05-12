@@ -128,5 +128,6 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
 5. 更新
 - 修复遮盖层bug
 - 美化遮盖层效果
+- 兼容确定取消按钮的省略布局
 
     
