@@ -119,7 +119,7 @@ class Modal {
 
     bindEvent() {
         this.ele.forEach(v => {
-            if(this[v]) {
+            if (this[v]) {
                 this[v].addEventListener('click', () => {
                     this.css(this.contain, {display: 'none'});
                     this.css(this.cover, {display: 'none'});
@@ -143,6 +143,20 @@ class Modal {
                 cFn();
             }, false);
         }
+        return this;
+    }
+
+    initiativeDecide(dFn) {
+        this.css(this.contain, {display: 'none'});
+        this.css(this.cover, {display: 'none'});
+        dFn();
+        return this;
+    }
+
+    initiativeCancel(cFn) {
+        this.css(this.contain, {display: 'none'});
+        this.css(this.cover, {display: 'none'});
+        cFn();
         return this;
     }
 

@@ -11,6 +11,7 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
 ```
 - modal的配套服务
 ```javascript
+        //显式玩法
         new Modal({}).decideFn(() => {
             //do something
             console.log(1);
@@ -18,6 +19,14 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
             //do something
             console.log(2);
         });
+        //隐式玩法
+        new Modal({}).initiativeDecide(() => {
+                    //do something
+                    console.log(1);
+                }).initiativeCancel(() => {
+                    //do something
+                    console.log(2);
+                });
 ```
 >html中:
 ```html
@@ -130,5 +139,6 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
 - 美化遮盖层效果
 - 兼容确定取消按钮的省略布局
 - 省略布局下不存在对应控件的遍历报错修复
+- 增加隐式确认取消的功能调用
 
     
