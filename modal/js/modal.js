@@ -18,7 +18,7 @@ class Modal {
     }
 
     updateConfig() {
-        for (let i = 0; i < this._config; i++) {
+        for (let i in this._config) {
             this.config[i] = this._config[i];
         }
     }
