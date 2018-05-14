@@ -64,7 +64,7 @@ class Modal {
             float: 'left',
             height: '100%',
             lineHeight: '35px',
-            fontSize: '18px',
+            fontSize: '16px',
             paddingLeft: '5px',
             color: 'white'
         });
