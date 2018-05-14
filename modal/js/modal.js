@@ -63,7 +63,7 @@ class Modal {
         this.css(this.title, {
             float: 'left',
             height: '100%',
-            lineHeight: '35px',
+            lineHeight: '33px',
             fontSize: '16px',
             paddingLeft: '5px',
             color: 'white'
@@ -72,7 +72,7 @@ class Modal {
             float: 'right',
             cursor: 'pointer',
             height: '100%',
-            lineHeight: '35px',
+            lineHeight: '33px',
             fontSize: '20px',
             paddingRight: '10px',
             color: 'white'
