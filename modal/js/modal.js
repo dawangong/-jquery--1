@@ -68,15 +68,17 @@ class Modal {
             paddingLeft: '5px',
             color: 'white'
         });
-        this.css(this.close, {
-            float: 'right',
-            cursor: 'pointer',
-            height: '100%',
-            lineHeight: '33px',
-            fontSize: '20px',
-            paddingRight: '10px',
-            color: 'white'
-        });
+        if (this.close) {
+            this.css(this.close, {
+                float: 'right',
+                cursor: 'pointer',
+                height: '100%',
+                lineHeight: '33px',
+                fontSize: '20px',
+                paddingRight: '10px',
+                color: 'white'
+            });
+        }
         if (this.decide || this.cancel) {
             this.css(this.footer, {
                 background: '#f5f5f5',
