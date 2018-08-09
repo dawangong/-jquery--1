@@ -9,23 +9,23 @@
             padding: 0;
         }
     </style>
-    <script src="js/tooltip组件.js"></script>
+    <script src="js/tooltip.js"></script>
 </head>
 <body>
 <p style="position: relative;left: 200px;top: 100px;background:blue;display: inline">
     测试
-    <span class="tooltip">
+    <span class="bg-tooltip">
         tooltip
     </span>
 </p>
 <p style="position: relative;left: 400px;top: 200px;background:blue;display: inline">
     测试
-    <span class="tooltip">
+    <span class="bg-tooltip">
         tooltip
     </span>
 </p>
 <script>
-	new Tooltip({tooltips: ['tooltip'], position: 'left', padding: '3px 10px', color: 'white', bgColor: 'red'});
+	new Tooltip({tooltips: ['bg-tooltip'], position: 'left', padding: '3px 10px', color: 'white', bgColor: 'red'});
 </script>
 </body>
 </html>

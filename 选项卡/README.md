@@ -28,7 +28,7 @@
         <div class="dg-tab-contain.box">2</div>
         <div class="dg-tab-contain.box">3</div>
     </div>
-    <script src="js/tab组件.js"></script>
+    <script src="js/tab.js"></script>
     </body>
     ```
 2. tab对象参数解释：
