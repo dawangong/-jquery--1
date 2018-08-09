@@ -5,7 +5,8 @@ class Modal {
             contain: 'modal-contain',
             cover: 'modal-cover',
             width: 400,
-            height: 200
+            height: 200,
+            themeColor: '#5998df'
         };
         this.init();
     }
@@ -38,28 +39,31 @@ class Modal {
     }
 
     setElement() {
+        console.log(document.documentElement.scrollHeight);
         this.ele.splice(0, 3);
         this.css(this.contain, {
             width: this.config.width + 'px',
             height: this.config.height + 'px',
-            position: 'absolute',
+            position: 'fixed',
             left: '50%',
             marginLeft: -this.config.width / 2 + 'px',
             top: '50%',
             marginTop: -this.config.height / 2 + 'px',
-            zIndex: 100,
+            zIndex: 200,
             background: 'white',
             display: 'block'
         });
         this.css(this.cover, {
             background: 'rgb(127, 127, 127, 0.5)',
             width: `${document.body.clientWidth}px`,
-            height: `${document.body.scrollHeight}px`,
+            height: `${(document.body.scrollHeight || document.documentElement.scrollHeight)}px`,
             position: 'fixed',
             display: 'block',
-            zIndex: 10
+            zIndex: 199,
+            left: 0,
+            top: 0
         });
-        this.css(this.header, {width: '100%', height: '35px', background: '#5998df'});
+        this.css(this.header, {width: '100%', height: '35px', background: this.config.themeColor});
         this.css(this.title, {
             float: 'left',
             height: '100%',
@@ -93,7 +97,7 @@ class Modal {
         if (this.decide) {
             this.css(this.decide, {
                 float: 'right',
-                background: '#5998df',
+                background: this.config.themeColor,
                 marginRight: baseValue + 'px',
                 marginTop: '6px',
                 padding: '3px 8px',

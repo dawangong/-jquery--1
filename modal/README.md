@@ -28,7 +28,7 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
                     console.log(2);
                 });
 ```
->html中:
+>html中: 如果需要遮盖层，需要在body子元素那级加入modal-cover
 ```html
 <body>
 <div class="modal-contain">
@@ -44,6 +44,7 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
         <div class="modal-cancel">取消</div>
     </div>
 </div>
+<div class="modal-cover"></div>
 <script src="js/modal.js"></script>
 </body>
 ```
@@ -63,6 +64,11 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
     - 类型：数字
     - 可选参数
     - 默认值：200
+- themeColor
+    - 释义：modal的主题颜色
+    - 类型：字符串
+    - 可选参数
+    - 默认值：#5998df
 
 3. 配套服务
 - decideFn
@@ -98,6 +104,7 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
         <div class="modal-decide">确定</div>
     </div>
 </div>
+<div class="modal-cover"></div>
 <script src="js/modal.js"></script>
 </body>
 ```
@@ -116,6 +123,7 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
         <div class="modal-cancel">取消</div>
     </div>
 </div>
+<div class="modal-cover"></div>
 <script src="js/modal.js"></script>
 </body>
 ```
@@ -131,6 +139,7 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
         <p>xxx</p>
     </div>
 </div>
+<div class="modal-cover"></div>
 <script src="js/modal.js"></script>
 </body>
 ```
@@ -140,5 +149,8 @@ new Tab({contain:'xxx', width:'xxx', height:'xxx'});
 - 兼容确定取消按钮的省略布局
 - 省略布局下不存在对应控件的遍历报错修复
 - 增加隐式确认取消的功能调用
+- 修复一些情况下遮盖层无效
+- 增加弹窗自适应居中
+- 增加主题色配置项
 
     

@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812051ce-1ad2-425e-b4d3-6690205b64f3" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modal/js/modal.js" afterPath="$PROJECT_DIR$/modal/js/modal.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modal/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/modal/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modal/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/modal/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modal/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/modal/js/modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modal/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/modal/template.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,23 +19,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="modal.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modal/js/modal.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="demo.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modal/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="364">
+              <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modal/demo.html">
+      <file leaf-file-name="modal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modal/js/modal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="293">
+              <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modal/template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modal/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="606">
+                <caret line="147" column="11" lean-forward="true" selection-start-line="147" selection-start-column="11" selection-end-line="147" selection-end-column="11" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -75,14 +97,14 @@
         <option value="$PROJECT_DIR$/轮播图/js/base.js" />
         <option value="$PROJECT_DIR$/modal/modal.js" />
         <option value="$PROJECT_DIR$/modal/modal.html" />
-        <option value="$PROJECT_DIR$/modal/template.html" />
         <option value="$PROJECT_DIR$/tooltip/js/tooltip组件.js" />
         <option value="$PROJECT_DIR$/tab选项卡/js/tab组件.js" />
         <option value="$PROJECT_DIR$/轮播图/js/main.js" />
         <option value="$PROJECT_DIR$/轮播图/demo.html" />
+        <option value="$PROJECT_DIR$/modal/template.html" />
         <option value="$PROJECT_DIR$/modal/demo.html" />
-        <option value="$PROJECT_DIR$/modal/README.md" />
         <option value="$PROJECT_DIR$/modal/js/modal.js" />
+        <option value="$PROJECT_DIR$/modal/README.md" />
       </list>
     </option>
   </component>
@@ -91,7 +113,6 @@
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
-    <annotation-enable>false</annotation-enable>
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
@@ -99,11 +120,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="39" />
-    <option name="y" value="-3" />
-    <option name="width" value="1334" />
-    <option name="height" value="710" />
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -122,21 +144,10 @@
     </entry>
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,13 +174,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path" value="node" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -191,9 +203,6 @@
         </RuleState>
       </list>
     </option>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -224,11 +233,13 @@
       <workItem from="1526283094316" duration="63000" />
       <workItem from="1526283502488" duration="628000" />
       <workItem from="1526289408882" duration="284000" />
+      <workItem from="1533777470246" duration="273000" />
+      <workItem from="1533777753809" duration="1205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52008000" />
+    <option name="totallyTimeSpent" value="53486000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -240,31 +251,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14172813" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.49789253" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261944" sideWeight="0.5021075" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16430902" sideWeight="0.49789253" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Quokka" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.49789253" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.49789253" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14164905" />
+      <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49789253" weight="0.32934782" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5021075" side_tool="true" weight="0.3261944" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49789253" weight="0.32934782" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="CSS-X-Fire" order="12" sideWeight="0.49789253" weight="0.32934782" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" weight="0.16430902" />
+      <window_info anchor="bottom" id="RNConsole" order="14" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="调试" order="0" />
+      <window_info anchor="bottom" id="找到" order="13" weight="0.3294893" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Quokka" order="14" sideWeight="0.49789253" weight="0.32934782" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="运行" order="3" />
+      <window_info anchor="bottom" id="Find" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,48 +285,29 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/modal/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
-          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding />
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modal/js/modal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-          <folding />
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modal/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tab选项卡/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tab选项卡/js/tab组件.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/轮播图/demo.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -325,15 +318,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/轮播图/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -354,51 +347,43 @@
     <entry file="file://$PROJECT_DIR$/tab选项卡/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
-          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tab选项卡/js/tab组件.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="true" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+        <state>
+          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tooltip/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tooltip/js/tooltip组件.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2628">
-          <caret line="73" column="36" lean-forward="false" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+          <caret line="73" column="36" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tab选项卡/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
-          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tab选项卡/js/tab组件.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2988">
-          <caret line="83" column="79" lean-forward="false" selection-start-line="83" selection-start-column="79" selection-end-line="83" selection-end-column="79" />
+          <caret line="83" column="79" selection-start-line="83" selection-start-column="79" selection-end-line="83" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tab选项卡/js/tab组件.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/轮播图/demo.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -409,29 +394,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/轮播图/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tooltip/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tooltip/js/tooltip组件.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2988">
-          <caret line="83" column="1" lean-forward="false" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+          <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -466,56 +447,48 @@
     <entry file="file://$PROJECT_DIR$/tab选项卡/js/tab组件.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3420">
-          <caret line="95" column="1" lean-forward="false" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+          <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tooltip/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tooltip/js/tooltip组件.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2628">
-          <caret line="73" column="36" lean-forward="false" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+          <caret line="73" column="36" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tab选项卡/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
-          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tab选项卡/js/tab组件.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2988">
-          <caret line="83" column="79" lean-forward="false" selection-start-line="83" selection-start-column="79" selection-end-line="83" selection-end-column="79" />
+          <caret line="83" column="79" selection-start-line="83" selection-start-column="79" selection-end-line="83" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tab选项卡/js/tab组件.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/轮播图/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tooltip/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="6" />
+        <state>
+          <caret selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -536,23 +509,15 @@
     <entry file="file://$PROJECT_DIR$/tooltip/js/tooltip组件.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1224">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/轮播图/js/require.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/轮播图/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://F:/The university learning program/组件开发/分页组件.html" />
     <entry file="file://$PROJECT_DIR$/轮播图/js/base.js">
@@ -587,14 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modal/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -605,33 +562,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/modal/template.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="24">
+            <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modal/README.md">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="65">
           <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modal/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-          <folding />
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="606">
+            <caret line="147" column="11" lean-forward="true" selection-start-line="147" selection-start-column="11" selection-end-line="147" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modal/js/modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="293">
+          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modal/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
         </state>
       </provider>
     </entry>
