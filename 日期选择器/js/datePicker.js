@@ -67,17 +67,22 @@ class datePicker {
             this.createAp('tr', this.tbody, '', true, index);
             index++;
         }
+        let tempArr = this.cacl();
+        let arr = [];
+        let arrIndex = 0;
+        while (arrIndex < 7) {
+            arr[arrIndex] = tempArr.slice((arrIndex + 1) * 7 - 7, (arrIndex + 1) * 7);
+            arrIndex++;
+        }
         this.trContain.forEach((v, i) => {
             delete this.week;
             let suoyin = 0;
-            if (i === 0) {
-                this.week = ['日', '一', '二', '三', '四', '五', '六'];
-            }
+            this.week = ['日', '一', '二', '三', '四', '五', '六'];
             while (suoyin < 7) {
-                if (this.week) {
+                if (i === 0) {
                     this.createAp('th', v, this.week[suoyin], true);
                 } else {
-                    this.createAp('th', v, '', true);
+                    this.createAp('th', v, arr[i - 1][suoyin], true);
                 }
                 suoyin++;
             }
@@ -108,7 +113,7 @@ class datePicker {
     setStyle() {
         this.getElement();
         this.css(this.content, {
-            width: '250px',
+            width: '300px',
             border: '1px solid #e3e7ec',
             boxSizing: 'border-box',
             borderRadius: '2px',
@@ -170,6 +175,47 @@ class datePicker {
 
     extend(config) {
         Object.assign(this.config, config);
+    }
+
+    isRun() {
+        let year = new Date().getFullYear();
+        let isRunYear;
+        year % 4 === 0 ? isRunYear = true : isRunYear = false;
+        return isRunYear;
+    }
+
+    cacl() {
+        let dateNum = [31, this.isRun(), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        let date = new Date();
+        let year = date.getFullYear();
+        let month;
+        if (0 < date.getMonth() && date.getMonth() < 9) {
+            month = `0${date.getMonth() + 1}`;
+        } else {
+            month = `${date.getMonth() + 1}`;
+        }
+
+        let weekNum = new Date(`${year},${month},01`).getDay();
+        let index = 1;
+        let arr = [];
+        while (index <= dateNum[month - 1]) {
+            arr.push(index);
+            index++;
+        }
+        let lastIndex = weekNum;
+        let lastNum = dateNum[month - 2];
+        while (lastIndex > 0) {
+            arr.unshift(lastNum);
+            lastNum--;
+            lastIndex--;
+        }
+        let nextNum = 42 - arr.length;
+        let nextIndex = 1;
+        while (nextIndex <= nextNum) {
+            arr.push(nextIndex);
+            nextIndex++;
+        }
+        return arr;
     }
 
     getConst(str) {
