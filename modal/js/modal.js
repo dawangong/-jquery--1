@@ -2,11 +2,12 @@ class Modal {
     constructor(config = {}) {
         this._config = config;
         this.config = {
-            contain: 'modal-contain',
-            cover: 'modal-cover',
+            contain: 'dg-modal-contain',
+            cover: 'dg-modal-cover',
             width: 400,
             height: 200,
-            themeColor: '#5998df'
+            themeColor: '#5998df',
+            fontFamily: '微软雅黑'
         };
         this.init();
     }
@@ -34,12 +35,11 @@ class Modal {
         this.ele = ['header', 'footer', 'title', 'close', 'decide', 'cancel'];
         let parents = ['contain', 'contain', 'header', 'header', 'footer', 'footer'];
         this.ele.forEach((v, i) => {
-            this[v] = this.$(this[parents[i]], '.modal-' + v);
+            this[v] = this.$(this[parents[i]], '.dg-modal-' + v);
         })
     }
 
     setElement() {
-        console.log(document.documentElement.scrollHeight);
         this.ele.splice(0, 3);
         this.css(this.contain, {
             width: this.config.width + 'px',
@@ -104,7 +104,7 @@ class Modal {
                 fontSize: '16px',
                 color: 'white',
                 cursor: 'pointer',
-                fontFamily: '微软雅黑'
+                fontFamily: this.config.fontFamily
             });
         }
 
@@ -118,7 +118,7 @@ class Modal {
                 color: '#333',
                 fontSize: '16px',
                 cursor: 'pointer',
-                fontFamily: '微软雅黑'
+                fontFamily: this.config.fontFamily
             });
         }
     }

@@ -26,7 +26,7 @@ class Tab {
 			contentHeight: 300,
 			contentBorderColor: 'black',
 			event: 'click',
-			contain: 'tab-contain',
+			contain: 'dg-tab-contain',
 		};
 		for (let i in this._configuration) {
 			this.configuration[i] = this._configuration[i];
@@ -83,9 +83,9 @@ class Tab {
 
 	prepareElement() {
 		this.contain = document.getElementsByClassName(this.configuration.contain)[0];
-		this.oul = this.contain.getElementsByClassName('tab-contain.ul')[0];
-		this.item = [...this.oul.getElementsByClassName('tab-contain.item')];
-		this.box = [...this.contain.getElementsByClassName('tab-contain.content')];
+		this.oul = this.contain.getElementsByClassName('dg-tab-contain.ul')[0];
+		this.item = [...this.oul.getElementsByClassName('dg-tab-contain.item')];
+		this.box = [...this.contain.getElementsByClassName('dg-tab-contain.content')];
 	}
 
 	css(obj, option) {
