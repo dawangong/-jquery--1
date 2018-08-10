@@ -12,7 +12,7 @@ class datePicker {
         this.item = ['lastYear', 'lastMonth', 'yearValue', 'monthValue', 'nextMonth', 'nextYear'];
         this.itemLevel3 = ['bg-datePick-header', 'bg-datePick-table', 'bg-datePick-bar'];
         this.extend(config);
-        this.setStyle();
+        this.setStyle(false);
     }
 
     getElement() {
@@ -32,8 +32,52 @@ class datePicker {
     }
 
     bindEvent() {
-        this.container.addEventListener('focus', () => {
-        }, false)
+        this.lastMonth.addEventListener('click', () => {
+            this.getLastMonth();
+        }, false);
+        this.nextMonth.addEventListener('click', () => {
+            this.getNextMonth();
+        }, false);
+        this.lastYear.addEventListener('click', () => {
+            this.getLastYear();
+        }, false);
+        this.nextYear.addEventListener('click', () => {
+            this.getNextYear();
+        }, false);
+        this.input.addEventListener('focus',() => {
+            this.css(this.content, {
+                display: 'block'
+            });
+        } ,false);
+        this.trWeek.forEach(v => {
+            v.addEventListener('mouseover', (ev) => {
+                this.css(ev.target, {
+                    color: '#009eff'
+                })
+            },false);
+            v.addEventListener('mouseout', (ev) => {
+                this.css(ev.target, {
+                    color: 'rgb(96, 98, 102)'
+                })
+            },false);
+            v.addEventListener('click', (ev) => {
+                this.today = ev.target.innerText;
+                this.input.value = `${this.year}-${this.month}-${this.today}`;
+                this.css(this.content, {
+                    display: 'none'
+                })
+            },false);
+        });
+        this.bar.addEventListener('mouseover', (ev) => {
+            this.css(ev.target, {
+                color: '#009eff'
+            })
+        },false)
+        this.bar.addEventListener('mouseout', (ev) => {
+            this.css(ev.target, {
+                color: 'rgb(96, 98, 102)'
+            })
+        },false)
     }
 
     createAp(tag, obj, text, complex = false, index = null) {
@@ -48,20 +92,40 @@ class datePicker {
                 this.css(this[tag], {
                     borderBottom: '1px solid #ebeef5'
                 })
+            } else if (tag === 'tr') {
+                this.trWeek.push(this[tag]);
             }
             if (tag === 'th') {
-                this.css(this[tag], {
-                    padding: '5px 8px',
-                    color: '#606266',
-                    fontWeight: 400
-                })
+                if (typeof text === 'number') {
+                    this.thContain.push(this[tag]);
+                    this.css(this[tag], {
+                        padding: '6px 10px',
+                        color: '#606266',
+                        fontSize: '14px',
+                        fontFamily: 'Helvetica',
+                        fontWeight: 200,
+                        cursor: 'pointer'
+                    })
+                } else {
+                    this.thWeek.push(this[tag]);
+                    this.css(this[tag], {
+                        padding: '5px 10px',
+                        color: '#606266',
+                        fontSize: '14px',
+                        fontFamily: 'Helvetica',
+                        fontWeight: 400,
+                    })
+                }
             }
             obj.appendChild(this[tag]);
         }
     }
 
     initDate() {
+        this.trWeek = [];
         this.trContain = [];
+        this.thWeek = [];
+        this.thContain = [];
         let index = 0;
         while (index < 7) {
             this.createAp('tr', this.tbody, '', true, index);
@@ -88,9 +152,9 @@ class datePicker {
             }
         });
         let date = new Date();
-        this.year = `${date.getFullYear()}年`;
-        this.month = `${date.getMonth() + 1}月`;
-        this.yearValue.innerText = this.year;
+        this.year = date.getFullYear();
+        this.month = date.getMonth() + 1;
+        this.yearValue.innerText = `${this.year}年`;
         this.css(this.yearValue, {
             fontSize: '16px',
             fontWeight: 500,
@@ -99,7 +163,7 @@ class datePicker {
             cursor: 'pointer',
             color: '#606266'
         });
-        this.monthValue.innerText = this.month;
+        this.monthValue.innerText = `${this.month}月`;;
         this.css(this.monthValue, {
             fontSize: '16px',
             fontWeight: 500,
@@ -110,67 +174,71 @@ class datePicker {
         });
     }
 
-    setStyle() {
-        this.getElement();
-        this.css(this.content, {
-            width: '300px',
-            border: '1px solid #e3e7ec',
-            boxSizing: 'border-box',
-            borderRadius: '2px',
-            marginTop: '5px'
-        });
-        this.css(this.input, {
-            width: '150px',
-            height: '20px',
-            textIndent: '2em',
-            outline: 'none'
-        });
-        this.css(this.icon, {
-            position: 'absolute',
-            left: '12px',
-            top: '10px'
-        });
-        this.css(this.bar, {
-            width: '200px',
-            margin: '5px auto',
-            display: 'flex',
-            justifyContent: 'space-around',
-        });
-        this.css(this.table, {
-            margin: '0 auto'
-        });
-        let lastYear = this.lastYear.getElementsByTagName('span')[0];
-        this.css(lastYear, {
-            fontSize: '14px',
-            position: 'relative',
-            top: '-1px',
-            color: '#303133',
-            cursor: 'pointer'
-        });
-        let nextYear = this.nextYear.getElementsByTagName('span')[0];
-        this.css(nextYear, {
-            fontSize: '14px',
-            position: 'relative',
-            top: '-1px',
-            color: '#303133',
-            cursor: 'pointer'
-        });
-        let lastMonth = this.lastMonth.getElementsByTagName('span')[0];
-        this.css(lastMonth, {
-            color: '#303133',
-            cursor: 'pointer'
-        });
-        let nextMonth = this.nextMonth.getElementsByTagName('span')[0];
-        this.css(nextMonth, {
-            color: '#303133',
-            cursor: 'pointer'
-        });
-        this.bindEvent();
+    setStyle(isUpdate) {
+        if(!isUpdate) {
+            this.getElement();
+            this.css(this.content, {
+                width: '300px',
+                border: '1px solid #e3e7ec',
+                boxSizing: 'border-box',
+                borderRadius: '2px',
+                marginTop: '5px',
+                display: 'none'
+            });
+            this.css(this.input, {
+                width: '150px',
+                height: '20px',
+                textIndent: '2em',
+                outline: 'none'
+            });
+            this.css(this.icon, {
+                position: 'absolute',
+                left: '12px',
+                top: '10px'
+            });
+            this.css(this.bar, {
+                width: '270px',
+                margin: '5px auto',
+                display: 'flex',
+                justifyContent: 'space-around',
+            });
+            this.css(this.table, {
+                borderCollapse: 'collapse',
+                margin: '0 auto'
+            });
+            let lastYear = this.lastYear.getElementsByTagName('span')[0];
+            this.css(lastYear, {
+                fontSize: '14px',
+                position: 'relative',
+                top: '-1px',
+                color: '#303133',
+                cursor: 'pointer'
+            });
+            let nextYear = this.nextYear.getElementsByTagName('span')[0];
+            this.css(nextYear, {
+                fontSize: '14px',
+                position: 'relative',
+                top: '-1px',
+                color: '#303133',
+                cursor: 'pointer'
+            });
+            let lastMonth = this.lastMonth.getElementsByTagName('span')[0];
+            this.css(lastMonth, {
+                color: '#303133',
+                cursor: 'pointer'
+            });
+            let nextMonth = this.nextMonth.getElementsByTagName('span')[0];
+            this.css(nextMonth, {
+                color: '#303133',
+                cursor: 'pointer'
+            });
+        }
         this.createAp('tbody', this.table);
         this.initDate();
         this.css(this.trContain[0], {
             borderBottom: '1px solid #e3e7ec'
         });
+        this.bindEvent();
     }
 
     extend(config) {
@@ -216,6 +284,26 @@ class datePicker {
             nextIndex++;
         }
         return arr;
+    }
+
+    getLastMonth() {
+        this.table.remove(this.tbody);
+        this.setStyle(true);
+    }
+
+    getNextMonth() {
+        this.table.remove(this.tbody);
+        this.setStyle(true);
+    }
+
+    getLastYear() {
+        this.table.remove(this.tbody);
+        this.setStyle(true);
+    }
+
+    getNextYear() {
+        this.table.remove(this.tbody);
+        this.setStyle(true);
     }
 
     getConst(str) {

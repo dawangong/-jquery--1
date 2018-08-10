@@ -20,8 +20,8 @@
       <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/日期选择器/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="179">
+              <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -29,8 +29,8 @@
       <file leaf-file-name="datePicker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/日期选择器/js/datePicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="110" column="11" lean-forward="true" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
+            <state relative-caret-position="259">
+              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -55,9 +55,21 @@
       <find>$</find>
       <find>this.container</find>
       <find>css</find>
-      <find>this.tbody</find>
       <find>this.trContain</find>
       <find>createAp</find>
+      <find>250</find>
+      <find>log</find>
+      <find>trContain</find>
+      <find>bar</find>
+      <find>5px 8px</find>
+      <find>thContain</find>
+      <find>cacl</find>
+      <find>setStyle</find>
+      <find>table</find>
+      <find>10px</find>
+      <find>this.year</find>
+      <find>this.tbody</find>
+      <find>create</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,7 +130,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -143,6 +155,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,7 +178,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,12 +244,13 @@
       <workItem from="1533777470246" duration="273000" />
       <workItem from="1533777753809" duration="2991000" />
       <workItem from="1533794096124" duration="14263000" />
-      <workItem from="1533823088928" duration="3409000" />
+      <workItem from="1533823088928" duration="3501000" />
+      <workItem from="1533863911270" duration="4541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72944000" />
+    <option name="totallyTimeSpent" value="77577000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -264,41 +277,41 @@
       <window_info anchor="bottom" id="RNConsole" order="14" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="调试" order="0" />
       <window_info anchor="bottom" id="找到" order="13" weight="0.3294893" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Quokka" order="14" sideWeight="0.49789253" weight="0.32934782" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="运行" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="运行" order="3" />
+      <window_info anchor="bottom" id="调试" order="0" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="找到" order="13" weight="0.3294893" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="运行" order="3" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Quokka" order="15" sideWeight="0.49789253" weight="0.32934782" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="运行" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49789253" weight="0.32934782" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14164905" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49789253" weight="0.32934782" />
-      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49789253" weight="0.32934782" />
+      <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="RNConsole" order="16" />
+      <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" sideWeight="0.49789253" weight="0.32934782" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" weight="0.16363636" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5021075" side_tool="true" weight="0.3261944" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="调试" order="0" />
-      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
       <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -499,15 +512,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/日期选择器/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="179">
+          <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/日期选择器/js/datePicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="110" column="11" lean-forward="true" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
+        <state relative-caret-position="259">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
         </state>
       </provider>
     </entry>
