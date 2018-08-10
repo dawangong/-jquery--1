@@ -87,7 +87,7 @@ class datePicker {
             this.css(v, {
                 cursor: 'pointer'
             });
-            v.addEventListener('click', () => {
+            v.onclick = () => {
                 let today = v.innerText;
                 if (0 < today && today < 10) {
                     this.today = `0${v.innerText}`;
@@ -98,7 +98,21 @@ class datePicker {
                 this.css(this.content, {
                     display: 'none'
                 })
-            }, false);
+            };
+        });
+        unNeed.forEach(v => {
+            this.css(v, {
+                color: '#c0c4cc'
+            })
+        });
+        need.forEach(v => {
+            this.tempEle = v;
+            v.onmouseover = () => {
+                v.style.color = '#009eff';
+            };
+            v.onmouseout = () => {
+                v.style.color = 'rgb(96, 98, 102)';
+            };
         });
         this.thContain.forEach((v, i) => {
             let today = v.innerText;
@@ -113,16 +127,6 @@ class datePicker {
                 this.config.min ? this.limitMin(Number(today), v) : '';
             }
             this.limitClass();
-        });
-        unNeed.forEach(v => {
-            this.css(v, {
-                color: '#c0c4cc'
-            })
-        });
-        need.forEach(v => {
-            this.tempEle = v;
-            v.addEventListener('mouseover', this.over, false);
-            v.addEventListener('mouseout', this.out, false);
         });
         this.bar.addEventListener('mouseover', (ev) => {
             this.css(ev.target, {
@@ -448,21 +452,14 @@ class datePicker {
     limitClass() {
         let cla = document.querySelectorAll('.bg-limit');
         cla.forEach(v => {
-            v.removeEventListener('mouseover', this.over);
-            v.removeEventListener('mouseout', this.out);
+            v.onmouseover = null;
+            v.onmouseout = null;
+            v.onclick = null;
             this.css(v, {
                 cursor: 'not-allowed',
-                color: 'rgb(204,206,208)'
+                color: 'rgb(241,241,241)'
             })
         })
-    }
-
-    over() {
-        this.style.color = '#009eff';
-    }
-
-    out() {
-        this.style.color = 'rgb(96, 98, 102)';
     }
 
     transform(str) {

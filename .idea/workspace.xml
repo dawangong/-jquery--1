@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812051ce-1ad2-425e-b4d3-6690205b64f3" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/日期选择器/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/日期选择器/js/datePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/js/datePicker.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,12 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/日期选择器/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="336">
+              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -29,8 +29,8 @@
       <file leaf-file-name="datePicker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/日期选择器/js/datePicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="448" column="18" lean-forward="true" selection-start-line="448" selection-start-column="18" selection-end-line="448" selection-end-column="18" />
+            <state relative-caret-position="407">
+              <caret line="100" column="14" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -47,10 +47,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>this.item</find>
-      <find>this[tag]</find>
-      <find>item1</find>
-      <find>this.monthV`</find>
       <find>initDate</find>
       <find>getE</find>
       <find>this.content</find>
@@ -73,10 +69,14 @@
       <find>limitMax</find>
       <find>input</find>
       <find>createAp</find>
-      <find>limitClass</find>
       <find>pointer</find>
       <find>need</find>
       <find>log</find>
+      <find>mouseover</find>
+      <find>limit</find>
+      <find>out</find>
+      <find>over</find>
+      <find>limitClass</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -253,12 +253,13 @@
       <workItem from="1533777753809" duration="2991000" />
       <workItem from="1533794096124" duration="14263000" />
       <workItem from="1533823088928" duration="3501000" />
-      <workItem from="1533863911270" duration="23558000" />
+      <workItem from="1533863911270" duration="23762000" />
+      <workItem from="1533900172652" duration="968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96594000" />
+    <option name="totallyTimeSpent" value="97766000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -273,7 +274,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14164905" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14164905" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49789253" weight="0.32934782" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5021075" side_tool="true" weight="0.3261944" />
@@ -281,45 +282,45 @@
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" sideWeight="0.49789253" weight="0.32934782" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" visible="true" weight="0.16363636" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" visible="true" weight="0.16363636" />
       <window_info anchor="bottom" id="RNConsole" order="14" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="调试" order="0" />
       <window_info anchor="bottom" id="找到" order="13" weight="0.3294893" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Quokka" order="14" sideWeight="0.49789253" weight="0.32934782" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="运行" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="调试" order="0" />
+      <window_info anchor="bottom" id="运行" order="3" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="调试" order="0" />
       <window_info anchor="bottom" id="找到" order="13" weight="0.3294893" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Quokka" order="15" sideWeight="0.49789253" weight="0.32934782" />
       <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="运行" order="3" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14164905" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49789253" weight="0.32934782" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49789253" weight="0.32934782" />
       <window_info anchor="bottom" id="RNConsole" order="16" />
+      <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" sideWeight="0.49789253" weight="0.32934782" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" visible="true" weight="0.16363636" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5021075" side_tool="true" weight="0.3261944" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49789253" weight="0.32934782" />
-      <window_info anchor="bottom" id="运行" order="3" />
-      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="调试" order="0" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
       <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -526,15 +527,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/日期选择器/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="336">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/日期选择器/js/datePicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="448" column="18" lean-forward="true" selection-start-line="448" selection-start-column="18" selection-end-line="448" selection-end-column="18" />
+        <state relative-caret-position="407">
+          <caret line="100" column="14" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
         </state>
       </provider>
     </entry>
