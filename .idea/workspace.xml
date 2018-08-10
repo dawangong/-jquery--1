@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812051ce-1ad2-425e-b4d3-6690205b64f3" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/日期选择器/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/日期选择器/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/demo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/日期选择器/js/datePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/js/datePicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/日期选择器/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/template.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,20 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="demo.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/日期选择器/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            <state relative-caret-position="312">
+              <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datePicker.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="datePicker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/日期选择器/js/datePicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1424">
-              <caret line="133" column="31" lean-forward="true" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
+            <state relative-caret-position="351">
+              <caret line="299" column="26" selection-start-line="299" selection-start-column="26" selection-end-line="299" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -47,8 +50,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>trContain</find>
-      <find>bar</find>
       <find>5px 8px</find>
       <find>thContain</find>
       <find>10px</find>
@@ -77,6 +78,8 @@
       <find>this.monthV`</find>
       <find>initDate</find>
       <find>getE</find>
+      <find>this.content</find>
+      <find>log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,7 +110,6 @@
         <option value="$PROJECT_DIR$/提示框/demo.html" />
         <option value="$PROJECT_DIR$/提示框/template.html" />
         <option value="$PROJECT_DIR$/提示框/README.md" />
-        <option value="$PROJECT_DIR$/日期选择器/template.html" />
         <option value="$PROJECT_DIR$/轮播图/README.md" />
         <option value="$PROJECT_DIR$/轮播图/template.html" />
         <option value="$PROJECT_DIR$/提示框/js/tooltip.js" />
@@ -117,8 +119,10 @@
         <option value="$PROJECT_DIR$/弹窗/demo.js" />
         <option value="$PROJECT_DIR$/弹窗/js/modal.js" />
         <option value="$PROJECT_DIR$/弹窗/demo.html" />
-        <option value="$PROJECT_DIR$/日期选择器/js/datePicker.js" />
+        <option value="$PROJECT_DIR$/日期选择器/README.md" />
         <option value="$PROJECT_DIR$/日期选择器/demo.html" />
+        <option value="$PROJECT_DIR$/日期选择器/template.html" />
+        <option value="$PROJECT_DIR$/日期选择器/js/datePicker.js" />
       </list>
     </option>
   </component>
@@ -252,12 +256,12 @@
       <workItem from="1533777753809" duration="2991000" />
       <workItem from="1533794096124" duration="14263000" />
       <workItem from="1533823088928" duration="3501000" />
-      <workItem from="1533863911270" duration="11302000" />
+      <workItem from="1533863911270" duration="14898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84338000" />
+    <option name="totallyTimeSpent" value="87934000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -280,7 +284,7 @@
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" sideWeight="0.49789253" weight="0.32934782" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" weight="0.16363636" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" visible="true" weight="0.16363636" />
       <window_info anchor="bottom" id="RNConsole" order="14" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
@@ -426,17 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/日期选择器/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/日期选择器/template.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/提示框/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -517,17 +510,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/日期选择器/js/datePicker.js">
+    <entry file="file://$PROJECT_DIR$/日期选择器/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="6" selection-start-column="6" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/日期选择器/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1424">
-          <caret line="133" column="31" lean-forward="true" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
+        <state relative-caret-position="72">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/日期选择器/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="312">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/日期选择器/js/datePicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="299" column="26" selection-start-line="299" selection-start-column="26" selection-end-line="299" selection-end-column="26" />
         </state>
       </provider>
     </entry>

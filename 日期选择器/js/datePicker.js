@@ -27,6 +27,8 @@ class datePicker {
 
     setElement() {
         this.container = this.$(document, this.config.container);
+        this.createEle('div', 'content', this.container);
+        this.content.className = 'bg-datePick-content';
         this.itemLevel1.forEach(v => {
             let str = this.getConst(v);
             this[str] = this.$(this.container, v);
@@ -88,7 +90,7 @@ class datePicker {
             }, false);
             v.addEventListener('click', (ev) => {
                 let today = ev.target.innerText;
-                if (0 < today && today < 9) {
+                if (0 < today && today < 10) {
                     this.today = `0${ev.target.innerText}`;
                 } else {
                     this.today = today;
@@ -276,8 +278,10 @@ class datePicker {
     isRun() {
         let year = new Date().getFullYear();
         let isRunYear;
+        let days;
         year % 4 === 0 ? isRunYear = true : isRunYear = false;
-        return isRunYear;
+        isRunYear ? days = 29: days = 28;
+        return days;
     }
 
     cacl() {
@@ -292,7 +296,14 @@ class datePicker {
             index++;
         }
         let lastIndex = weekNum;
+        if(weekNum === 0) {
+            lastIndex = 7;
+        }
         let lastNum = dateNum[month - 2];
+        if((month - 2) === -1) {
+            year = year - 1;
+            lastNum = 31;
+        }
         while (lastIndex > 0) {
             arr.unshift(lastNum);
             lastNum--;
@@ -308,29 +319,55 @@ class datePicker {
     }
 
     getLastMonth() {
-        this.table.remove(this.table);
-        console.log(this.month);
-        this.month = `0${this.month - 1}`;
-        console.log(this.month);
+        this.container.removeChild(this.content);
+        if (1 <= this.month && this.month <= 10) {
+            this.month = `0${Number(this.month) - 1}`;
+        } else {
+            this.month = Number(this.month) - 1;
+        }
+        if (this.month <= 0) {
+            this.month = 12;
+            this.year = this.year - 1;
+        }
         this.setStyle();
+        this.css(this.content, {
+            display: 'block'
+        })
     }
 
     getNextMonth() {
-        this.table.remove(this.table);
-        this.month = `0${this.month + 1}`;
+        this.container.removeChild(this.content);
+        if (1 <= this.month && this.month < 9) {
+            this.month = `0${Number(this.month) + 1}`;
+        } else {
+            this.month = Number(this.month) + 1;
+        }
+        if (this.month >= 13) {
+            this.month = '01';
+            this.year = this.year + 1;
+        }
         this.setStyle();
+        this.css(this.content, {
+            display: 'block'
+        })
     }
 
     getLastYear() {
-        this.table.remove(this.table);
-        this.year = `0${this.year - 1}`;
+        this.container.removeChild(this.content);
+        this.year = this.year - 1;
         this.setStyle();
+        this.css(this.content, {
+            display: 'block'
+        })
     }
 
     getNextYear() {
-        this.table.remove(this.table);
-        this.year = `0${this.year + 1}`;
+        this.container.removeChild(this.content);
+        this.year = this.year + 1;
         this.setStyle();
+        this.css(this.content, {
+            display: 'block'
+        })
     }
 
     getConst(str) {
