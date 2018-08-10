@@ -76,7 +76,7 @@ class datePicker {
         }, false);
         this.input.addEventListener('focus', () => {
             this.css(this.content, {
-                display: 'block'
+                display: 'block',
             });
         }, false);
         let unNeed = this.thContain.slice(0, this.start.length).concat(this.thContain.slice(this.start.length + this.end.length));
