@@ -5,7 +5,9 @@ class datePicker {
 
     init(config) {
         this.config = {
-            container: 'bg-datePick-container'
+            container: 'bg-datePick-container',
+            max: '',
+            min: ''
         };
         this.itemLevel1 = ['bg-datePick-input', 'bg-datePick-content', 'bg-datePick-icon'];
         this.itemLevel2 = ['bg-datePick-last-year', 'bg-datePick-last-month', 'bg-datePick-year-value', 'bg-datePick-month-value', 'bg-datePick-next-month', 'bg-datePick-next-year'];
@@ -79,7 +81,12 @@ class datePicker {
         }, false);
         let unNeed = this.thContain.slice(0, this.start.length).concat(this.thContain.slice(this.start.length + this.end.length));
         let need = this.thContain.slice(this.start.length, this.start.length + this.end.length);
-        need.forEach(v => {
+        let limitStart = this.thContain.slice(0, this.start.length);
+        let limitEnd = this.thContain.slice(0, this.start.length + this.end.length);
+        need.forEach((v) => {
+            this.css(v, {
+                cursor: 'pointer'
+            });
             v.addEventListener('click', () => {
                 let today = v.innerText;
                 if (0 < today && today < 10) {
@@ -93,22 +100,36 @@ class datePicker {
                 })
             }, false);
         });
+        this.thContain.forEach((v, i) => {
+            let today = v.innerText;
+            if(i < limitStart.length) {
+                this.config.max ? this.limitMax(Number(today), v, 'last') : '';
+                this.config.min ? this.limitMin(Number(today), v, 'last') : '';
+            } else if(i > limitEnd.length) {
+                this.config.max ? this.limitMax(Number(today), v, 'next') : '';
+                this.config.min ? this.limitMin(Number(today), v, 'next') : '';
+            } else {
+                this.config.max ? this.limitMax(Number(today), v) : '';
+                this.config.min ? this.limitMin(Number(today), v) : '';
+            }
+            this.limitClass();
+        });
         unNeed.forEach(v => {
             this.css(v, {
                 color: '#c0c4cc'
             })
         });
         need.forEach(v => {
-                v.addEventListener('mouseover', () => {
-                    this.css(v, {
-                        color: '#009eff'
-                    })
-                }, false);
-                v.addEventListener('mouseout', () => {
-                    this.css(v, {
-                        color: 'rgb(96, 98, 102)'
-                    })
-                }, false);
+            v.addEventListener('mouseover', () => {
+                this.css(v, {
+                    color: '#009eff'
+                })
+            }, false);
+            v.addEventListener('mouseout', () => {
+                this.css(v, {
+                    color: 'rgb(96, 98, 102)'
+                })
+            }, false);
         });
         this.bar.addEventListener('mouseover', (ev) => {
             this.css(ev.target, {
@@ -149,8 +170,7 @@ class datePicker {
                         fontSize: '14px',
                         fontFamily: 'Helvetica',
                         fontWeight: 200,
-                        cursor: 'pointer'
-                    })
+                    });
                 } else {
                     this.thWeek.push(this[tag]);
                     this.css(this[tag], {
@@ -286,7 +306,7 @@ class datePicker {
         let isRunYear;
         let days;
         year % 4 === 0 ? isRunYear = true : isRunYear = false;
-        isRunYear ? days = 29: days = 28;
+        isRunYear ? days = 29 : days = 28;
         return days;
     }
 
@@ -305,11 +325,11 @@ class datePicker {
             index++;
         }
         let lastIndex = weekNum;
-        if(weekNum === 0) {
+        if (weekNum === 0) {
             lastIndex = 7;
         }
         let lastNum = dateNum[month - 2];
-        if((month - 2) === -1) {
+        if ((month - 2) === -1) {
             year = year - 1;
             lastNum = 31;
         }
@@ -384,6 +404,72 @@ class datePicker {
         let index = str.lastIndexOf('-');
         let res = str.substring(index + 1);
         return res;
+    }
+
+    // limitMax(date, obj, when) {
+    //     let today = date;
+    //     if (0 < today && today < 10) {
+    //         this.today = `0${today}`;
+    //     } else {
+    //         this.today = today;
+    //     }
+    //     let nowTime;
+    //     if(when && when === 'last') {
+    //         let month = this.month - 1;
+    //         nowTime = this.transform(`${this.year}-${month}-${this.today}`);
+    //     } else if (when && when === 'next') {
+    //         let month = this.month + 1;
+    //         nowTime = this.transform(`${this.year}-${month}-${this.today}`);
+    //     } else {
+    //         nowTime = this.transform(`${this.year}-${this.month}-${this.today}`);
+    //     }
+    //     let limitTime = this.transform(this.config.max);
+    //     if(nowTime > limitTime) {
+    //         obj.className = 'bg-limit';
+    //     }
+    // }
+    //
+    // limitMin(date, obj, when) {
+    //     let today = date;
+    //     if (0 < today && today < 10) {
+    //         this.today = `0${today}`;
+    //     } else {
+    //         this.today = today;
+    //     }
+    //     let nowTime;
+    //     if(when && when === 'last') {
+    //         let month = this.month - 1;
+    //         nowTime = this.transform(`${this.year}-${month}-${this.today}`);
+    //     } else if (when && when === 'next') {
+    //         let month = this.month + 1;
+    //         nowTime = this.transform(`${this.year}-${month}-${this.today}`);
+    //     } else {
+    //         nowTime = this.transform(`${this.year}-${this.month}-${this.today}`);
+    //     }
+    //     let limitTime = this.transform(this.config.min);
+    //     if(nowTime < limitTime) {
+    //         obj.className = 'bg-limit';
+    //     }
+    // }
+    //
+    // limitClass() {
+    //     let cla = document.querySelectorAll('.bg-limit');
+    //     cla.forEach(v => {
+    //         v.addEventListener('mouseover', () => {
+    //             return false;
+    //         }, true);
+    //         this.css(v, {
+    //             cursor: 'not-allowed',
+    //             background: 'rgb(204,206,208)'
+    //         })
+    //     })
+    // }
+
+    transform(str) {
+        let res = str.replace(/-/g, ',');
+        let time = new Date(res).getTime().toString();
+        time = time.substring(0, time.length - 3);
+        return Number(time);
     }
 
     extend(config) {
