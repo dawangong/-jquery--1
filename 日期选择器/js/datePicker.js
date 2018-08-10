@@ -102,10 +102,10 @@ class datePicker {
         });
         this.thContain.forEach((v, i) => {
             let today = v.innerText;
-            if(i < limitStart.length) {
+            if (i < limitStart.length) {
                 this.config.max ? this.limitMax(Number(today), v, 'last') : '';
                 this.config.min ? this.limitMin(Number(today), v, 'last') : '';
-            } else if(i > limitEnd.length) {
+            } else if (i >= limitEnd.length) {
                 this.config.max ? this.limitMax(Number(today), v, 'next') : '';
                 this.config.min ? this.limitMin(Number(today), v, 'next') : '';
             } else {
@@ -120,16 +120,9 @@ class datePicker {
             })
         });
         need.forEach(v => {
-            v.addEventListener('mouseover', () => {
-                this.css(v, {
-                    color: '#009eff'
-                })
-            }, false);
-            v.addEventListener('mouseout', () => {
-                this.css(v, {
-                    color: 'rgb(96, 98, 102)'
-                })
-            }, false);
+            this.tempEle = v;
+            v.addEventListener('mouseover', this.over, false);
+            v.addEventListener('mouseout', this.out, false);
         });
         this.bar.addEventListener('mouseover', (ev) => {
             this.css(ev.target, {
@@ -406,64 +399,71 @@ class datePicker {
         return res;
     }
 
-    // limitMax(date, obj, when) {
-    //     let today = date;
-    //     if (0 < today && today < 10) {
-    //         this.today = `0${today}`;
-    //     } else {
-    //         this.today = today;
-    //     }
-    //     let nowTime;
-    //     if(when && when === 'last') {
-    //         let month = this.month - 1;
-    //         nowTime = this.transform(`${this.year}-${month}-${this.today}`);
-    //     } else if (when && when === 'next') {
-    //         let month = this.month + 1;
-    //         nowTime = this.transform(`${this.year}-${month}-${this.today}`);
-    //     } else {
-    //         nowTime = this.transform(`${this.year}-${this.month}-${this.today}`);
-    //     }
-    //     let limitTime = this.transform(this.config.max);
-    //     if(nowTime > limitTime) {
-    //         obj.className = 'bg-limit';
-    //     }
-    // }
-    //
-    // limitMin(date, obj, when) {
-    //     let today = date;
-    //     if (0 < today && today < 10) {
-    //         this.today = `0${today}`;
-    //     } else {
-    //         this.today = today;
-    //     }
-    //     let nowTime;
-    //     if(when && when === 'last') {
-    //         let month = this.month - 1;
-    //         nowTime = this.transform(`${this.year}-${month}-${this.today}`);
-    //     } else if (when && when === 'next') {
-    //         let month = this.month + 1;
-    //         nowTime = this.transform(`${this.year}-${month}-${this.today}`);
-    //     } else {
-    //         nowTime = this.transform(`${this.year}-${this.month}-${this.today}`);
-    //     }
-    //     let limitTime = this.transform(this.config.min);
-    //     if(nowTime < limitTime) {
-    //         obj.className = 'bg-limit';
-    //     }
-    // }
-    //
-    // limitClass() {
-    //     let cla = document.querySelectorAll('.bg-limit');
-    //     cla.forEach(v => {
-    //         v.addEventListener('mouseover', () => {
-    //             return false;
-    //         }, true);
-    //         this.css(v, {
-    //             cursor: 'not-allowed',
-    //             background: 'rgb(204,206,208)'
-    //         })
-    //     })
-    // }
+    limitMax(date, obj, when) {
+        let today = date;
+        if (0 < today && today < 10) {
+            this.today = `0${today}`;
+        } else {
+            this.today = today;
+        }
+        let nowTime;
+        if (when && when === 'last') {
+            let month = `0${this.month - 1}`;
+            nowTime = this.transform(`${this.year}-${month}-${this.today}`);
+        } else if (when && when === 'next') {
+            let month = `0${Number(this.month) + 1}`;
+            nowTime = this.transform(`${this.year}-${month}-${this.today}`);
+        } else {
+            nowTime = this.transform(`${this.year}-${this.month}-${this.today}`);
+        }
+        let limitTime = this.transform(this.config.max);
+        if (nowTime > limitTime) {
+            obj.className = 'bg-limit';
+        }
+    }
+
+    limitMin(date, obj, when) {
+        let today = date;
+        if (0 < today && today < 10) {
+            this.today = `0${today}`;
+        } else {
+            this.today = today;
+        }
+        let nowTime;
+        if (when && when === 'last') {
+            let month = `0${this.month - 1}`;
+            nowTime = this.transform(`${this.year}-${month}-${this.today}`);
+        } else if (when && when === 'next') {
+            let month = `0${Number(this.month) + 1}`;
+            nowTime = this.transform(`${this.year}-${month}-${this.today}`);
+        } else {
+            nowTime = this.transform(`${this.year}-${this.month}-${this.today}`);
+        }
+        let limitTime = this.transform(this.config.min);
+        if (nowTime < limitTime) {
+            obj.className = 'bg-limit';
+        }
+    }
+
+    limitClass() {
+        let cla = document.querySelectorAll('.bg-limit');
+        cla.forEach(v => {
+            v.removeEventListener('mouseover', this.over);
+            v.removeEventListener('mouseout', this.out);
+            this.css(v, {
+                cursor: 'not-allowed',
+                color: 'rgb(204,206,208)'
+            })
+        })
+    }
+
+    over() {
+        this.style.color = '#009eff';
+    }
+
+    out() {
+        this.style.color = 'rgb(96, 98, 102)';
+    }
 
     transform(str) {
         let res = str.replace(/-/g, ',');
