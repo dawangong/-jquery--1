@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812051ce-1ad2-425e-b4d3-6690205b64f3" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/日期选择器/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/日期选择器/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/demo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/日期选择器/js/datePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/js/datePicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/日期选择器/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/template.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,8 +28,8 @@
       <file leaf-file-name="datePicker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/日期选择器/js/datePicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="299" column="26" selection-start-line="299" selection-start-column="26" selection-end-line="299" selection-end-column="26" />
+            <state relative-caret-position="171">
+              <caret line="81" column="27" lean-forward="true" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -50,18 +46,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>5px 8px</find>
-      <find>thContain</find>
-      <find>10px</find>
-      <find>this.tbody</find>
-      <find>content</find>
-      <find>table</find>
-      <find>this.month</find>
-      <find>init</find>
-      <find>this.input</find>
       <find>day</find>
       <find>9</find>
-      <find>cacl</find>
       <find>tody</find>
       <find>this.year</find>
       <find>Style</find>
@@ -80,6 +66,16 @@
       <find>getE</find>
       <find>this.content</find>
       <find>log</find>
+      <find>bind</find>
+      <find>ca</find>
+      <find>this.th</find>
+      <find>cacl</find>
+      <find>contai</find>
+      <find>thContain</find>
+      <find>`</find>
+      <find>contain</find>
+      <find>end</find>
+      <find>trWeek</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -256,12 +252,12 @@
       <workItem from="1533777753809" duration="2991000" />
       <workItem from="1533794096124" duration="14263000" />
       <workItem from="1533823088928" duration="3501000" />
-      <workItem from="1533863911270" duration="14898000" />
+      <workItem from="1533863911270" duration="16798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87934000" />
+    <option name="totallyTimeSpent" value="89834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -276,7 +272,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14164905" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14164905" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49789253" weight="0.32934782" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5021075" side_tool="true" weight="0.3261944" />
@@ -284,7 +280,7 @@
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" sideWeight="0.49789253" weight="0.32934782" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" visible="true" weight="0.16363636" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" visible="true" weight="0.16363636" />
       <window_info anchor="bottom" id="RNConsole" order="14" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
@@ -536,8 +532,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/日期选择器/js/datePicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="299" column="26" selection-start-line="299" selection-start-column="26" selection-end-line="299" selection-end-column="26" />
+        <state relative-caret-position="171">
+          <caret line="81" column="27" lean-forward="true" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
         </state>
       </provider>
     </entry>

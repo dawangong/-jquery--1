@@ -77,21 +77,13 @@ class datePicker {
                 display: 'block'
             });
         }, false);
-        this.trWeek.forEach(v => {
-            v.addEventListener('mouseover', (ev) => {
-                this.css(ev.target, {
-                    color: '#009eff'
-                })
-            }, false);
-            v.addEventListener('mouseout', (ev) => {
-                this.css(ev.target, {
-                    color: 'rgb(96, 98, 102)'
-                })
-            }, false);
-            v.addEventListener('click', (ev) => {
-                let today = ev.target.innerText;
+        let unNeed = this.thContain.slice(0, this.start.length).concat(this.thContain.slice(this.start.length + this.end.length));
+        let need = this.thContain.slice(this.start.length, this.start.length + this.end.length);
+        need.forEach(v => {
+            v.addEventListener('click', () => {
+                let today = v.innerText;
                 if (0 < today && today < 10) {
-                    this.today = `0${ev.target.innerText}`;
+                    this.today = `0${v.innerText}`;
                 } else {
                     this.today = today;
                 }
@@ -100,6 +92,23 @@ class datePicker {
                     display: 'none'
                 })
             }, false);
+        });
+        unNeed.forEach(v => {
+            this.css(v, {
+                color: '#c0c4cc'
+            })
+        });
+        need.forEach(v => {
+                v.addEventListener('mouseover', () => {
+                    this.css(v, {
+                        color: '#009eff'
+                    })
+                }, false);
+                v.addEventListener('mouseout', () => {
+                    this.css(v, {
+                        color: 'rgb(96, 98, 102)'
+                    })
+                }, false);
         });
         this.bar.addEventListener('mouseover', (ev) => {
             this.css(ev.target, {
@@ -130,8 +139,6 @@ class datePicker {
                 this.css(this[tag], {
                     borderBottom: '1px solid #ebeef5'
                 })
-            } else if (tag === 'tr') {
-                this.trWeek.push(this[tag]);
             }
             if (tag === 'th') {
                 if (typeof text === 'number') {
@@ -160,7 +167,6 @@ class datePicker {
     }
 
     initDate() {
-        this.trWeek = [];
         this.trContain = [];
         this.thWeek = [];
         this.thContain = [];
@@ -285,6 +291,8 @@ class datePicker {
     }
 
     cacl() {
+        this.start = [];
+        this.end = [];
         let dateNum = [31, this.isRun(), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
         let year = this.year;
         let month = this.month;
@@ -292,6 +300,7 @@ class datePicker {
         let index = 1;
         let arr = [];
         while (index <= dateNum[month - 1]) {
+            this.end.push(index);
             arr.push(index);
             index++;
         }
@@ -305,6 +314,7 @@ class datePicker {
             lastNum = 31;
         }
         while (lastIndex > 0) {
+            this.start.push(lastNum);
             arr.unshift(lastNum);
             lastNum--;
             lastIndex--;
