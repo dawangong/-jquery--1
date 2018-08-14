@@ -45,7 +45,7 @@
         </div>
     </div>
     <div class="dg-modal-cover"></div>
-    <script src="js/modal.js"></script>
+    <script src="js/Modal.js"></script>
     </body>
     ```
 2. modal配置参数详解：
@@ -108,7 +108,7 @@
         </div>
     </div>
     <div class="dg-modal-cover"></div>
-    <script src="js/modal.js"></script>
+    <script src="js/Modal.js"></script>
     </body>
     ```
     - 只含取消键modal
@@ -127,7 +127,7 @@
         </div>
     </div>
     <div class="dg-modal-cover"></div>
-    <script src="js/modal.js"></script>
+    <script src="js/Modal.js"></script>
     </body>
     ```
     - 无底部modal
@@ -143,7 +143,7 @@
         </div>
     </div>
     <div class="dg-modal-cover"></div>
-    <script src="js/modal.js"></script>
+    <script src="js/Modal.js"></script>
     </body>
     ```
 5. 更新

@@ -6,7 +6,7 @@ class Modal {
             cover: 'dg-modal-cover',
             width: 400,
             height: 200,
-            themeColor: '#5998df',
+            themeColor: '#409eff',
             fontFamily: '微软雅黑'
         };
         this.init();
@@ -90,7 +90,7 @@ class Modal {
                 height: '40px',
                 position: 'absolute',
                 left: 0,
-                bottom: 0
+                bottom: 0,
             });
         }
         let baseValue = 10;
@@ -104,7 +104,8 @@ class Modal {
                 fontSize: '16px',
                 color: 'white',
                 cursor: 'pointer',
-                fontFamily: this.config.fontFamily
+                fontFamily: this.config.fontFamily,
+                borderRadius: '3px'
             });
         }
 
@@ -118,7 +119,8 @@ class Modal {
                 color: '#333',
                 fontSize: '16px',
                 cursor: 'pointer',
-                fontFamily: this.config.fontFamily
+                fontFamily: this.config.fontFamily,
+                borderRadius: '3px'
             });
         }
     }

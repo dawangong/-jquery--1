@@ -28,7 +28,7 @@
         <div class="dg-tab-contain.box">2</div>
         <div class="dg-tab-contain.box">3</div>
     </div>
-    <script src="js/tab.js"></script>
+    <script src="js/Tab.js"></script>
     </body>
     ```
 2. tab对象参数解释：
@@ -45,7 +45,7 @@
 3. 配置参数(configuration)解释：
     - left
         - 含义：tab选项卡整体的位置
-        - 默认：0 
+        - 默认：1 
         - 类型：数字
       - top
         - 含义：tab选项卡整体的位置
@@ -62,11 +62,7 @@
       - tabBorderColor
         - 含义：tab按钮切换后的背景色设置（从左向右依次设置） 
         - 默认：['black', 'black', 'black']
-        - 类型：数组
-      - tabDistance
-        - 含义：tab间的距离
-        - 默认：5
-        - 类型：数字   
+        - 类型：数组 
       - fontSize
         - 含义：tab中的字体大小
         - 默认：14
