@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812051ce-1ad2-425e-b4d3-6690205b64f3" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/消息提示/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/消息提示/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/消息提示/js/Message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/消息提示/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/弹窗/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/弹窗/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/弹窗/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/弹窗/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/弹窗/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/弹窗/js/Modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/提示框/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/文字提示/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/提示框/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/文字提示/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/提示框/js/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/文字提示/js/Tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/提示框/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/文字提示/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/日期选择器/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/demo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/选项卡/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/选项卡/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/选项卡/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/选项卡/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/选项卡/js/tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/选项卡/js/Tab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/选项卡/js/Tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/选项卡/js/Tab.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,38 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/选项卡/demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tab.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/选项卡/js/Tab.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="70" column="197" lean-forward="true" selection-start-line="70" selection-start-column="197" selection-end-line="70" selection-end-column="197" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/选项卡/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="310">
-                <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,8 +29,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>this.content</find>
-      <find>bind</find>
       <find>ca</find>
       <find>this.th</find>
       <find>cacl</find>
@@ -103,6 +57,8 @@
       <find>limitClass</find>
       <find>this.item</find>
       <find>borderBottom</find>
+      <find>contentWidth</find>
+      <find>contentHeight</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,12 +103,13 @@
         <option value="$PROJECT_DIR$/日期选择器/README.md" />
         <option value="$PROJECT_DIR$/消息提示/js/datePicker.js" />
         <option value="$PROJECT_DIR$/消息提示/js/message.js" />
-        <option value="$PROJECT_DIR$/选项卡/demo.html" />
         <option value="$PROJECT_DIR$/消息提示/README.md" />
         <option value="$PROJECT_DIR$/消息提示/template.html" />
         <option value="$PROJECT_DIR$/消息提示/demo.html" />
         <option value="$PROJECT_DIR$/日期选择器/demo.html" />
         <option value="$PROJECT_DIR$/弹窗/js/Modal.js" />
+        <option value="$PROJECT_DIR$/选项卡/README.md" />
+        <option value="$PROJECT_DIR$/选项卡/demo.html" />
         <option value="$PROJECT_DIR$/选项卡/js/Tab.js" />
       </list>
     </option>
@@ -197,6 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,22 +162,10 @@
               <item name="Component-development" type="b2602c69:ProjectViewProjectNode" />
               <item name="Component-development" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Component-development" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Component-development" type="462c0819:PsiDirectoryNode" />
-              <item name="选项卡" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Component-development" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Component-development" type="462c0819:PsiDirectoryNode" />
-              <item name="选项卡" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,12 +238,13 @@
       <workItem from="1533900172652" duration="2713000" />
       <workItem from="1514766170569" duration="148000" />
       <workItem from="1534122597961" duration="18000" />
-      <workItem from="1534216886045" duration="3858000" />
+      <workItem from="1534216886045" duration="4166000" />
+      <workItem from="1534496211396" duration="954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103535000" />
+    <option name="totallyTimeSpent" value="104797000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -310,31 +257,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14164905" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49789253" weight="0.32934782" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5021075" side_tool="true" weight="0.3261944" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49789253" weight="0.32934782" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" weight="0.16363636" />
-      <window_info anchor="bottom" id="RNConsole" order="14" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14164905" />
-      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" sideWeight="0.49789253" weight="0.32934782" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" visible="true" weight="0.16363636" />
+      <window_info anchor="bottom" id="RNConsole" order="14" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="调试" order="0" />
       <window_info anchor="bottom" id="找到" order="13" weight="0.3294893" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Quokka" order="14" sideWeight="0.49789253" weight="0.32934782" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="运行" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="调试" order="0" />
+      <window_info anchor="bottom" id="运行" order="3" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="找到" order="13" weight="0.3294893" />
@@ -349,8 +295,8 @@
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49789253" weight="0.32934782" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="RNConsole" order="16" />
-      <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" sideWeight="0.49789253" weight="0.32934782" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" visible="true" weight="0.16363636" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5021075" side_tool="true" weight="0.3261944" />
@@ -358,7 +304,7 @@
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="调试" order="0" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
+      <window_info anchor="bottom" id="Message" order="5" />
       <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -574,27 +520,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/选项卡/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/选项卡/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="310">
-            <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+          <first_editor relative-caret-position="251">
+            <caret line="86" column="16" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/选项卡/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/选项卡/js/Tab.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="70" column="197" lean-forward="true" selection-start-line="70" selection-start-column="197" selection-end-line="70" selection-end-column="197" />
+        <state relative-caret-position="159">
+          <caret line="62" column="35" lean-forward="true" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
         </state>
       </provider>
     </entry>

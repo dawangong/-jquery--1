@@ -22,11 +22,12 @@ class Tab {
             tabDistance: 0,
             fontSize: '14px',
             fontColor: ['white', 'white', 'white'],
-            contentWidth: 300,
-            contentHeight: 300,
+            contentWidth: 800,
+            contentHeight: 500,
             contentBorderColor: 'black',
             event: 'click',
             contain: 'dg-tab-contain',
+            contentBorder: true
         };
         for (let i in this._configuration) {
             this.configuration[i] = this._configuration[i];
@@ -62,10 +63,16 @@ class Tab {
             this.css(this.box[i], {
                 position: 'absolute',
                 border: `1px solid ${this.configuration.contentBorderColor}`,
-                width: this.configuration.contentHeight + 'px',
+                width: this.configuration.contentWidth + 'px',
                 height: this.configuration.contentHeight + 'px',
                 display: 'none',
             });
+            if(this.configuration.contentBorder) {
+                this.css(this.box[i], {
+                    border: 0,
+                    borderTop: `1px solid ${this.configuration.contentBorderColor}`
+                });
+            }
         });
         this.css(this.box[0], {display: 'block'});
         this.css(this.item[0], {background: '#2196F3', marginLeft: 0, borderBottom: '1px solid #2196F3',                borderLeft: `1px solid ${this.configuration.tabBorderColor[0]}`,
