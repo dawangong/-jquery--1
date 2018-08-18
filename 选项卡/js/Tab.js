@@ -26,7 +26,7 @@ class Tab {
             contentHeight: 500,
             contentBorderColor: 'black',
             event: 'click',
-            contain: 'dg-tab-contain',
+            container: 'dg-tab-container',
             contentBorder: true
         };
         for (let i in this._configuration) {
@@ -36,7 +36,7 @@ class Tab {
 
     enactLayout() {
         this.prepareElement();
-        this.css(this.contain, {
+        this.css(this.container, {
             position: 'absolute',
             left: this.configuration.left + 'px',
             top: this.configuration.top + 'px'
@@ -96,10 +96,10 @@ class Tab {
     }
 
     prepareElement() {
-        this.contain = document.getElementsByClassName(this.configuration.contain)[0];
-        this.oul = this.contain.getElementsByClassName('dg-tab-contain.ul')[0];
-        this.item = [...this.oul.getElementsByClassName('dg-tab-contain.item')];
-        this.box = [...this.contain.getElementsByClassName('dg-tab-contain.content')];
+        this.container = document.getElementsByClassName(this.configuration.container)[0];
+        this.oul = this.container.getElementsByClassName('dg-tab-container.ul')[0];
+        this.item = [...this.oul.getElementsByClassName('dg-tab-container.item')];
+        this.box = [...this.container.getElementsByClassName('dg-tab-container.content')];
     }
 
     css(obj, option) {

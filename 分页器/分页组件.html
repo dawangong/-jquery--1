@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function() {
+				page({
+					id: 'yema', 					//分页容器
+					nowpag: 1, 						//初始化展现第一页
+					allpag: 10, 					//总共十页
+					marginleft: 5 + 'px',			//可以控制间距
+					color: 'blueviolet', 			//控制字体颜色
+					background: 'orangered',		//控制背景色
+					outline: '1px solid blueviolet' //用轮廓线形成样式
+				});
+				//页面加载完毕后 初始化好分页样式和功能
+			};
+				//这个函数用来形成具体的细节样式
+			function pageinit(ag, obj, color, outline, marginLeft, background) {
+				ag.style.color = color;
+				ag.style.outline = outline;
+				ag.style.marginLeft = marginLeft;
+				ag.style.background = background;
+				ag.style.display = 'block';
+				ag.style.float = 'left';
+				ag.style.textDecoration = 'none';
+				ag.style.width = 20 + 'px';
+				ag.style.height = 20 + 'px';
+				ag.style.fontSize = 14 + 'px';
+				ag.style.textAlign = 'center';
+				ag.style.lineHeight = 20 + 'px';
+				obj.appendChild(ag);
+			}
+				//真正初始化分页的主函数
+			function page(jsson) {
+				if(!jsson.id) {
+					return false;
+				}
+				var obj = document.getElementById(jsson.id);
+				var nowpag = jsson.nowpag;
+				var allpag = jsson.allpag;
+				var clr = jsson.color;
+				var outl = jsson.outline;
+				var marginleft = jsson.marginleft;
+				var background = jsson.background;
+				
+				//这里写死了展现七页 其实本来想写一个变量提供接口自定义展现数量的 这里是之前想法的残骸临时修改的
+				var fjnum = Math.ceil(7 / 2);
+				//首页开始
+				if(nowpag >= 5 && allpag >= 8) {
+					var atag = document.createElement('a');
+					atag.href = '#1';
+					atag.innerHTML = '首页';
+					pageinit(atag, obj, clr, outl, marginleft);
+					atag.style.width = 35 + 'px';
+				}
+				//上一页开始
+				if(nowpag >= 2) {
+					var atag = document.createElement('a');
+					atag.href = '#' + (nowpag - 1);
+					atag.innerHTML = '上一页';
+					pageinit(atag, obj, clr, outl, marginleft);
+					atag.style.width = 48 + 'px';
+				}
+				//当展现数量大于等于拥有的总页数时
+				if(allpag <= 7) {
+					for(var i = 1; i <= allpag; i++) {
+						var atag = document.createElement('a');
+						atag.href = '#' + i;
+						atag.innerHTML = i;
+						if(i == nowpag) {
+							pageinit(atag, obj, clr, outl, marginleft, background);
+						} else {
+							pageinit(atag, obj, clr, outl, marginleft);
+						}
+
+					}
+				}
+				//总页数远超过展现页数时
+				else {
+					for(var i = 1; i <= 7; i++) {
+						var atag = document.createElement('a');
+						//前三页的特殊处理
+						if(nowpag < fjnum) {
+							atag.href = '#' + i;
+							atag.innerHTML = i;
+							if(i == nowpag) {
+								pageinit(atag, obj, clr, outl, marginleft, background);
+							} else {
+								pageinit(atag, obj, clr, outl, marginleft);
+							}
+						}
+						//后三页特殊处理
+						else if(nowpag > allpag - fjnum + 1) {
+							atag.href = '#' + (allpag - 7 + i);
+							atag.innerHTML = allpag - 7 + i;
+							if(i == nowpag - fjnum + 1) {
+								pageinit(atag, obj, clr, outl, marginleft, background);
+							} else {
+								pageinit(atag, obj, clr, outl, marginleft);
+							}
+						}
+						//初步大体处理
+						else {
+							atag.href = '#' + (nowpag - fjnum + i);
+							atag.innerHTML = nowpag - fjnum + i;
+							if(i == fjnum) {
+								pageinit(atag, obj, clr, outl, marginleft, background);
+							} else {
+								pageinit(atag, obj, clr, outl, marginleft);
+							}
+						}
+
+					}
+				}
+				//下一页开始
+				if(allpag - nowpag >= 1) {
+					var atag = document.createElement('a');
+					atag.href = '#' + (nowpag + 1);
+					atag.innerHTML = '下一页';
+					pageinit(atag, obj, clr, outl, marginleft);
+					atag.style.width = 48 + 'px';
+				}
+				//尾页开始
+				if(allpag - nowpag > 3 && allpag >= 8) {
+					var atag = document.createElement('a');
+					atag.href = '#' + allpag;
+					atag.innerHTML = '尾页';
+					pageinit(atag, obj, clr, outl, marginleft);
+					atag.style.width = 35 + 'px';
+				}
+				//让页码动态化
+				var alla = obj.getElementsByTagName('a');
+				for(var i = 0; i < alla.length; i++) {
+					alla[i].onclick = function() {
+						var nownum = parseInt(this.getAttribute('href').substring(1));
+						obj.innerHTML = '';
+						page({
+							id: 'yema',
+							nowpag: nownum,
+							allpag: 10,
+							marginleft: 5 + 'px',
+							color: 'blueviolet',
+							background: 'orangered',
+							outline: '1px solid blueviolet'
+						});
+						return false; //阻止默认事件 地址栏添加#
+					}
+
+				}
+				//阻止文字被选中
+				obj.onselectstart = function() {
+					return false;
+				}
+			}
+			//显示的页码数   特殊值
+			// 3 -8       -5
+			// 5 -7  	  -2
+			// 7 -6  	   1
+			// 9 -5   	   4
+		</script>
+	</head>
+
+	<body>
+		<div id="yema"></div>
+	</body>
+
+</html>

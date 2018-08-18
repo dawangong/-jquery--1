@@ -18,15 +18,15 @@
     >html中:
     ```html
     <body>
-    <div class="dg-tab-contain">
-        <ul class="dg-tab-contain.ul">
-            <li class="dg-tab-contain.item">tab1</li>
-            <li class="dg-tab-contain.item">tab2</li>
-            <li class="dg-tab-contain.item">tab3</li>
+    <div class="dg-tab-container">
+        <ul class="dg-tab-container.ul">
+            <li class="dg-tab-container.item">tab1</li>
+            <li class="dg-tab-container.item">tab2</li>
+            <li class="dg-tab-container.item">tab3</li>
         </ul>
-        <div class="dg-tab-contain.box">1</div>
-        <div class="dg-tab-contain.box">2</div>
-        <div class="dg-tab-contain.box">3</div>
+        <div class="dg-tab-container.content">1</div>
+        <div class="dg-tab-container.content">2</div>
+        <div class="dg-tab-container.content">3</div>
     </div>
     <script src="js/Tab.js"></script>
     </body>
@@ -91,12 +91,13 @@
         - 含义：触发切换的事件类型
         - 默认：'click'
         - 类型：字符串
-      - contain
+      - container
         - 含义：最外层容器的类名参数
-        - 默认：'tab-contain'
+        - 默认：'tab-container'
         - 类型：字符串
+        - 第二个tab开始为必填参数
 4. 其他：
-    - 如果一个页面使用多个tab，外层容器请定义不同的类名，其他照旧模板。（外层容器类名默认是模板中的：tab-contain）
+    - 如果一个页面使用多个tab，外层容器请定义不同的类名，其他照旧模板。（外层容器类名默认是模板中的：tab-container）
     - 传递参数时前后顺序任意即可，内部已经做过了相关处理
 5. 更新：
   - 2018.3.3

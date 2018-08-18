@@ -13,7 +13,7 @@
     - contain
         - 释义：最外层容器的className
         - 类型：字符串
-        - 可选参数（第二个modal起为必填参数）
+        - 可选参数（第二个dataPicker起为必填参数）
         - 默认值：bg-datePick-container
     - max
         - 释义：限制日期选择器可选择的结束日期

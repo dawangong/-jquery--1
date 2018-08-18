@@ -7,7 +7,7 @@
     ```
     - 传入配置参数
     ```javascript
-    new Tab({contain:'xxx', width:'xxx', height:'xxx'});
+    new Tab({container:'xxx', width:'xxx', height:'xxx'});
     ```
     - modal的配套服务
     ```javascript
@@ -31,7 +31,7 @@
     >html中: 如果需要遮盖层，需要在body子元素那级加入modal-cover
     ```html
     <body>
-    <div class="dg-modal-contain">
+    <div class="dg-modal-container">
         <div class="dg-modal-header">
             <div class="dg-modal-title">demo</div>
             <div class="dg-modal-close">x</div>
@@ -49,11 +49,11 @@
     </body>
     ```
 2. modal配置参数详解：
-    - contain
+    - container
         - 释义：最外层容器的className
         - 类型：字符串
         - 可选参数（第二个modal起为必填参数）
-        - 默认值：dg-modal-contain
+        - 默认值：dg-modal-container
     - width
         - 释义：modal的宽度
         - 类型：数字
@@ -95,7 +95,7 @@
     - 只含确认键modal
     ```html
     <body>
-    <div class="dg-modal-contain">
+    <div class="dg-modal-container">
         <div class="dg-modal-header">
             <div class="dg-modal-title">demo</div>
             <div class="dg-modal-close">x</div>
@@ -114,7 +114,7 @@
     - 只含取消键modal
     ```html
     <body>
-    <div class="dg-modal-contain">
+    <div class="dg-modal-container">
         <div class="dg-modal-header">
             <div class="dg-modal-title">demo</div>
             <div class="dg-modal-close">x</div>
@@ -133,7 +133,7 @@
     - 无底部modal
     ```html
     <body>
-    <div class="dg-modal-contain">
+    <div class="dg-modal-container">
         <div class="dg-modal-header">
             <div class="dg-modal-title">demo</div>
             <div class="dg-modal-close">x</div>

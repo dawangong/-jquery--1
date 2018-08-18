@@ -11,7 +11,9 @@
     </style>
 </head>
 <body>
-    <div class="dg-modal-contain" style="display: none">
+    <button>弹窗1</button>
+    <button>弹窗2</button>
+    <div class="dg-modal-container" style="display: none">
         <div class="dg-modal-header">
             <div class="dg-modal-title">demo</div>
             <div class="dg-modal-close">×</div>
@@ -24,17 +26,34 @@
             <div class="dg-modal-decide">确定</div>
         </div>
     </div>
+    <div class="dg-modal-container2" style="display: none">
+        <div class="dg-modal-header">
+            <div class="dg-modal-title">demo</div>
+            <div class="dg-modal-close">×</div>
+        </div>
+        <div class="dg-modal-body">
+            <p>xxx</p>
+        </div>
+    </div>
     <!--遮盖层需要嵌套为body的子级标签（所有遮盖层公用此标签）-->
     <div class="dg-modal-cover"></div>
     <script src="js/Modal.js"></script>
     <script>
-        new Modal().decideFn(() => {
-            //do something
-            console.log(1);
-        }).cancelFn(() => {
-            //do something
-            console.log(2);
-        });
+        let btn = document.getElementsByTagName('button');
+        btn[0].onclick = function () {
+            new Modal().decideFn(() => {
+                //do something
+                console.log(1);
+            }).cancelFn(() => {
+                //do something
+                console.log(2);
+            });
+        };
+        btn[1].onclick = function () {
+            new Modal({
+                container: 'dg-modal-container2'
+            });
+        }
     </script>
 </body>
 </html>

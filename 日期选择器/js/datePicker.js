@@ -5,13 +5,13 @@ class datePicker {
 
     init(config) {
         this.config = {
-            container: 'bg-datePick-container',
+            container: 'dg-datePick-container',
             max: '',
             min: ''
         };
-        this.itemLevel1 = ['bg-datePick-input', 'bg-datePick-content', 'bg-datePick-icon'];
-        this.itemLevel2 = ['bg-datePick-last-year', 'bg-datePick-last-month', 'bg-datePick-year-value', 'bg-datePick-month-value', 'bg-datePick-next-month', 'bg-datePick-next-year'];
-        this.itemLevel3 = ['bg-datePick-bar', 'bg-datePick-table'];
+        this.itemLevel1 = ['dg-datePick-input', 'dg-datePick-content', 'dg-datePick-icon'];
+        this.itemLevel2 = ['dg-datePick-last-year', 'dg-datePick-last-month', 'dg-datePick-year-value', 'dg-datePick-month-value', 'dg-datePick-next-month', 'dg-datePick-next-year'];
+        this.itemLevel3 = ['dg-datePick-bar', 'dg-datePick-table'];
         this.item3 = ['div', 'table'];
         this.item1 = ['lastYear', 'lastMonth', 'yearValue', 'monthValue', 'nextMonth', 'nextYear'];
         this.extend(config);
@@ -29,8 +29,11 @@ class datePicker {
 
     setElement() {
         this.container = this.$(document, this.config.container);
+        this.css(this.container, {
+           position: 'relative'
+        });
         this.createEle('div', 'content', this.container);
-        this.content.className = 'bg-datePick-content';
+        this.content.className = 'dg-datePick-content';
         this.itemLevel1.forEach(v => {
             let str = this.getConst(v);
             this[str] = this.$(this.container, v);
@@ -251,8 +254,8 @@ class datePicker {
         });
         this.css(this.icon, {
             position: 'absolute',
-            left: '12px',
-            top: '10px'
+            left: '5px',
+            top: '2px'
         });
         this.css(this.bar, {
             width: '270px',
@@ -474,7 +477,9 @@ class datePicker {
     }
 
     $(parent, obj) {
-        return parent.querySelector(`.${obj}`);
+        if(parent) {
+            return parent.querySelector(`.${obj}`);
+        }
     }
 
     css(obj, option) {

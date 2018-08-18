@@ -1,25 +1,32 @@
 class Message {
     constructor(config = {}) {
         this.config = {
-            container: 'bg-message-container',
+            container: 'dg-message-container',
             message: '这是一段测试提示语',
-            type: 'jinggao'
+            type: 'tishi'
         };
         this.extend(config);
         this.init()
     }
 
     init() {
-        this.getElement();
+        this.initElement();
         this.setStyle();
-        this.setPosition();
+        this.bindEvent();
     }
 
-    getElement() {
-        this.container = this.$(document, 'bg-message-container');
+    initElement() {
+        this.getContainer();
         this[this.config.type] = this.createElement(this.container, 'span', `iconfont icon-${this.config.type}`);
-        this.message = this.createElement(this.container, 'span', 'bg-message-message');
-        this.close = this.createElement(this.container, 'span', 'bg-message-close');
+        this.message = this.createElement(this.container, 'span', 'dg-message-message');
+        this.close = this.createElement(this.container, 'span', 'dg-message-close');
+    }
+
+    getContainer() {
+        let script = document.getElementsByTagName('script')[0];
+        this.container = document.createElement('div');
+        this.container.className = 'dg-message-container';
+        document.body.insertBefore(this.container, script);
     }
 
     createElement(parent, tagName, className) {
@@ -33,7 +40,8 @@ class Message {
         this.css(this.container, {
             position: 'fixed',
             left: '50%',
-            top: 20,
+            top: '10px',
+            zIndex: 100,
             padding: '0px 40px',
             transform: 'translate(-50%)',
             borderRadius: '5px',
@@ -104,16 +112,20 @@ class Message {
         return theme;
     }
 
-    setPosition() {
-
-    }
+    bindEvent() {
+        this.close.addEventListener('click', () => {
+            document.body.removeChild(this.container);
+        },false);
+    };
 
     extend(config) {
         Object.assign(this.config, config);
     }
 
     $(parent, obj) {
-        return parent.querySelector(`.${obj}`);
+        if(parent) {
+            return parent.querySelector(`.${obj}`);
+        }
     }
 
     css(obj, option) {

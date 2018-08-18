@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="//at.alicdn.com/t/font_784886_f7m5krc09q.css">
 </head>
 <body>
-<div class="bg-message-container"></div>
+<button>点击提示</button>
+<button>点击警告</button>
 <script src="js/Message.js"></script>
 <script>
-    new Message();
+    document.getElementsByTagName('button')[0].onclick = function () {
+        new Message();
+    };
+    document.getElementsByTagName('button')[1].onclick = function () {
+        new Message({
+            type: 'jinggao'
+        });
+    };
 </script>
 </body>
 </html>

@@ -2,7 +2,7 @@ class Modal {
     constructor(config = {}) {
         this._config = config;
         this.config = {
-            contain: 'dg-modal-contain',
+            container: 'dg-modal-container',
             cover: 'dg-modal-cover',
             width: 400,
             height: 200,
@@ -26,14 +26,14 @@ class Modal {
     }
 
     getElement() {
-        this.contain = this.$(document, '.' + this.config.contain);
+        this.container = this.$(document, '.' + this.config.container);
         this.cover = this.$(document, '.' + this.config.cover);
         this.getOther();
     }
 
     getOther() {
         this.ele = ['header', 'footer', 'title', 'close', 'decide', 'cancel'];
-        let parents = ['contain', 'contain', 'header', 'header', 'footer', 'footer'];
+        let parents = ['container', 'container', 'header', 'header', 'footer', 'footer'];
         this.ele.forEach((v, i) => {
             this[v] = this.$(this[parents[i]], '.dg-modal-' + v);
         })
@@ -41,7 +41,7 @@ class Modal {
 
     setElement() {
         this.ele.splice(0, 3);
-        this.css(this.contain, {
+        this.css(this.container, {
             width: this.config.width + 'px',
             height: this.config.height + 'px',
             position: 'fixed',
@@ -56,7 +56,7 @@ class Modal {
         this.css(this.cover, {
             background: 'rgb(127, 127, 127, 0.5)',
             width: `${document.body.clientWidth}px`,
-            height: `${(document.body.scrollHeight || document.documentElement.scrollHeight)}px`,
+            height: `${(document.documentElement.scrollHeight || document.body.scrollHeight)}px`,
             position: 'fixed',
             display: 'block',
             zIndex: 199,
@@ -129,7 +129,7 @@ class Modal {
         this.ele.forEach(v => {
             if (this[v]) {
                 this[v].addEventListener('click', () => {
-                    this.css(this.contain, {display: 'none'});
+                    this.css(this.container, {display: 'none'});
                     this.css(this.cover, {display: 'none'});
                 }, false);
             }
@@ -155,21 +155,23 @@ class Modal {
     }
 
     initiativeDecide(dFn) {
-        this.css(this.contain, {display: 'none'});
+        this.css(this.container, {display: 'none'});
         this.css(this.cover, {display: 'none'});
         dFn();
         return this;
     }
 
     initiativeCancel(cFn) {
-        this.css(this.contain, {display: 'none'});
+        this.css(this.container, {display: 'none'});
         this.css(this.cover, {display: 'none'});
         cFn();
         return this;
     }
 
     $(parent, obj) {
-        return parent.querySelector(obj);
+        if(parent) {
+            return parent.querySelector(obj);
+        }
     }
 
     css(obj, option) {

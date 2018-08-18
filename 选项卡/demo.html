@@ -8,22 +8,39 @@
             margin: 0;
             padding: 0;
         }
+
+        .dg-tab-container2 {
+            margin-top: 100px;
+        }
     </style>
     <script src="js/Tab.js"></script>
 </head>
 <body>
-<div class="dg-tab-contain">
-    <ul class="dg-tab-contain.ul">
-        <li class="dg-tab-contain.item">tab1</li>
-        <li class="dg-tab-contain.item">tab2</li>
-        <li class="dg-tab-contain.item">tab3</li>
+<div class="dg-tab-container">
+    <ul class="dg-tab-container.ul">
+        <li class="dg-tab-container.item">tab1</li>
+        <li class="dg-tab-container.item">tab2</li>
+        <li class="dg-tab-container.item">tab3</li>
     </ul>
-    <div class="dg-tab-contain.content">1</div>
-    <div class="dg-tab-contain.content">2</div>
-    <div class="dg-tab-contain.content">3</div>
+    <div class="dg-tab-container.content">1</div>
+    <div class="dg-tab-container.content">2</div>
+    <div class="dg-tab-container.content">3</div>
 </div>
-    <script>
-        new Tab();
-    </script>
+<div class="dg-tab-container2">
+    <ul class="dg-tab-container.ul">
+        <li class="dg-tab-container.item">tab1</li>
+        <li class="dg-tab-container.item">tab2</li>
+        <li class="dg-tab-container.item">tab3</li>
+    </ul>
+    <div class="dg-tab-container.content">1</div>
+    <div class="dg-tab-container.content">2</div>
+    <div class="dg-tab-container.content">3</div>
+</div>
+<script>
+    new Tab();
+    new Tab({
+        container: 'dg-tab-container2'
+    });
+</script>
 </body>
 </html>
