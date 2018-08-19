@@ -40,7 +40,7 @@ class Message {
         this.css(this.container, {
             position: 'fixed',
             left: '50%',
-            top: '10px',
+            top: '0px',
             zIndex: 100,
             padding: '0px 40px',
             transform: 'translate(-50%)',
@@ -74,7 +74,12 @@ class Message {
             cursor: 'pointer',
             fontSize: '18px',
             color: this.recognize(this.config.type).color
-        })
+        });
+        this.move(this.container, 'top', 20, 20, 2000, () => {
+            this.move(this.container, 'opacity', 0, 50, 0, () => {
+                this.container && document.body.removeChild(this.container);
+            });
+        });
     }
 
     recognize(type) {
@@ -114,16 +119,50 @@ class Message {
 
     bindEvent() {
         this.close.addEventListener('click', () => {
-            document.body.removeChild(this.container);
-        },false);
+            this.move(this.container, 'opacity', 0, 50, 0, () => {
+                this.container && document.body.removeChild(this.container);
+            });
+        }, false);
     };
+
+    getStyle(obj, attr) {
+        return getComputedStyle(obj)[attr];
+    }
+
+    move(obj, attr, target, time, cbTime = 2000, cb) {
+        clearInterval(obj.timer);
+        obj.timer = setInterval(() => {
+            let attrValue;
+            if (attr === 'opacity') {
+                attrValue = parseFloat(this.getStyle(obj, attr));
+                attrValue = 100 * attrValue;
+                target = 100 * target;
+            } else {
+                attrValue = parseInt(this.getStyle(obj, attr));
+            }
+            let speed = (target - attrValue) / 6;
+            speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+            if (attrValue === target) {
+                clearInterval(obj.timer);
+                setTimeout(() => {
+                    cb && cb();
+                }, cbTime);
+            } else {
+                if (attr === 'opacity') {
+                    obj.style[attr] = (attrValue + speed) / 100;
+                } else {
+                    obj.style[attr] = attrValue + speed + 'px';
+                }
+            }
+        }, time);
+    }
 
     extend(config) {
         Object.assign(this.config, config);
     }
 
     $(parent, obj) {
-        if(parent) {
+        if (parent) {
             return parent.querySelector(`.${obj}`);
         }
     }

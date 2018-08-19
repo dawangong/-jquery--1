@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="812051ce-1ad2-425e-b4d3-6690205b64f3" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/弹窗/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/弹窗/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/弹窗/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/弹窗/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/弹窗/js/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/弹窗/js/Modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/日期选择器/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/日期选择器/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/日期选择器/js/datePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/日期选择器/js/datePicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/消息提示/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/消息提示/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/消息提示/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/消息提示/demo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/消息提示/js/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/消息提示/js/Message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/选项卡/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/选项卡/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/选项卡/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/选项卡/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/选项卡/js/Tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/选项卡/js/Tab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/选项卡/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/选项卡/template.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,7 +16,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="Message.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/消息提示/js/Message.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1132">
+              <caret line="114" column="22" lean-forward="true" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,7 +98,6 @@
         <option value="$PROJECT_DIR$/提示框/demo.html" />
         <option value="$PROJECT_DIR$/提示框/template.html" />
         <option value="$PROJECT_DIR$/提示框/README.md" />
-        <option value="$PROJECT_DIR$/轮播图/README.md" />
         <option value="$PROJECT_DIR$/轮播图/template.html" />
         <option value="$PROJECT_DIR$/提示框/js/tooltip.js" />
         <option value="$PROJECT_DIR$/选项卡/js/tab.js" />
@@ -124,6 +121,9 @@
         <option value="$PROJECT_DIR$/弹窗/demo.html" />
         <option value="$PROJECT_DIR$/弹窗/js/Modal.js" />
         <option value="$PROJECT_DIR$/日期选择器/js/datePicker.js" />
+        <option value="$PROJECT_DIR$/分页器/分页组件.html" />
+        <option value="$PROJECT_DIR$/轮播图/README.md" />
+        <option value="$PROJECT_DIR$/分页器/README.md" />
         <option value="$PROJECT_DIR$/消息提示/js/Message.js" />
       </list>
     </option>
@@ -168,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,10 +175,16 @@
               <item name="Component-development" type="b2602c69:ProjectViewProjectNode" />
               <item name="Component-development" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Component-development" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Component-development" type="462c0819:PsiDirectoryNode" />
+              <item name="消息提示" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,14 +198,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/消息提示" />
-      <recent name="E:\GitHub\Component-development\tab" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/分页器" />
       <recent name="$PROJECT_DIR$/弹窗" />
       <recent name="D:\GitHub\Component-development\modal\js" />
       <recent name="D:\GitHub\Component-development\tooltip" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/分页器" />
+      <recent name="$PROJECT_DIR$/消息提示" />
+      <recent name="E:\GitHub\Component-development\tab" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -255,12 +262,13 @@
       <workItem from="1534216886045" duration="4166000" />
       <workItem from="1534496211396" duration="3539000" />
       <workItem from="1534502983750" duration="3279000" />
-      <workItem from="1534572161541" duration="4792000" />
+      <workItem from="1534572161541" duration="5083000" />
+      <workItem from="1534663894073" duration="3355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115453000" />
+    <option name="totallyTimeSpent" value="119099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -273,6 +281,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14164905" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49789253" weight="0.32934782" />
@@ -282,20 +291,20 @@
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" sideWeight="0.49789253" weight="0.32934782" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" weight="0.16363636" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" visible="true" weight="0.14060606" />
       <window_info anchor="bottom" id="RNConsole" order="14" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="调试" order="0" />
       <window_info anchor="bottom" id="找到" order="13" weight="0.3294893" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Quokka" order="14" sideWeight="0.49789253" weight="0.32934782" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="运行" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="运行" order="3" />
+      <window_info anchor="bottom" id="调试" order="0" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
     </layout>
     <layout-to-restore>
@@ -311,8 +320,8 @@
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49789253" weight="0.32934782" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="RNConsole" order="16" />
+      <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" sideWeight="0.49789253" weight="0.32934782" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49789253" visible="true" weight="0.16363636" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5021075" side_tool="true" weight="0.3261944" />
@@ -320,7 +329,7 @@
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="调试" order="0" />
-      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32969698" />
       <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -336,8 +345,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tooltip/js/tooltip组件.js" />
-    <entry file="file://$PROJECT_DIR$/tooltip/demo.html" />
     <entry file="file://$PROJECT_DIR$/tab选项卡/template.html" />
     <entry file="file://$PROJECT_DIR$/tab选项卡/README.md" />
     <entry file="file://$PROJECT_DIR$/tab选项卡/demo.html" />
@@ -395,17 +402,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/弹窗/demo.js" />
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="24">
             <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -426,21 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/轮播图/README.md">
-      <provider editor-type-id="text-editor">
-        <state>
-          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="24">
-            <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/消息提示/template.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -451,13 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/消息提示/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/消息提示/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -465,13 +450,6 @@
             <caret column="4" selection-start-column="4" selection-end-column="4" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/选项卡/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -526,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/弹窗/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/弹窗/js/Modal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -554,17 +525,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/消息提示/js/Message.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="114" column="12" lean-forward="true" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/选项卡/js/Tab.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2232">
           <caret line="91" column="28" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分页器/分页组件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/轮播图/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="1" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分页器/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="24">
+            <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/选项卡/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/弹窗/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息提示/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息提示/js/Message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1132">
+          <caret line="114" column="22" lean-forward="true" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
         </state>
       </provider>
     </entry>

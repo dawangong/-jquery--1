@@ -7,10 +7,10 @@
     ```
     - 传入配置参数
     ```javascript
-    new datePicker({contain:'xxx', max:'xxx', min:'xxx'});
+    new datePicker({container:'xxx', max:'xxx', min:'xxx'});
     ```
 2. datePicker配置参数详解：
-    - contain
+    - container
         - 释义：最外层容器的className
         - 类型：字符串
         - 可选参数（第二个dataPicker起为必填参数）
